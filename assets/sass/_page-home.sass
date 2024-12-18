@@ -1,0 +1,2068 @@
+.btn-nav
+    border: 1px solid #fff
+    border-radius: 100%
+    width: size-pc(50,rem)
+    height: size-pc(50,rem)
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 8px
+    transition: all .3s ease
+    &.swiper-button-disabled
+        opacity: 0.5
+    &:hover
+        background-color: $color-2
+        border-color: $color-2
+.foot-ani
+    position: absolute
+    max-width: size-pc(380,rem)
+    width: 40%
+    z-index: 10
+    right: -2%
+    top: -15%
+
+    .box-thumb
+        position: relative
+        width: 100%
+        padding-bottom: 151%
+        img
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            object-fit: contain
+            opacity: 0
+            transition: all .3s ease
+        // @for $i from 1 through 12
+        //     img
+        //         &:nth-child(#{$i})
+        //             transition-delay: #{$i* 0.3}s
+.about-section
+    &.is-inview
+        .foot-ani
+            .box-thumb
+                img
+                    opacity: 1
+
+.home-banner
+    position: relative
+    padding-top: size-pc(180,rem)
+    min-height: 100vh
+    overflow: unset
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    @media (orientation: portrait)
+        min-height: size-pc(1100,rem)
+        // height: 100vw
+        // min-height: size-pc(900,rem)
+    @media screen and ( max-height: 700px )
+        min-height: size-pc(1100,rem)
+    @media screen and ( max-width: 767.82px )
+        padding-top: size-pc(110,rem)
+
+    .el-banner
+        position: absolute
+    .el-1
+        object-fit: contain
+        z-index: 7
+        width: 20%
+        max-width: size-pc(230,rem)
+        left: 14%
+        bottom: -7%
+        @media screen and ( max-width: 767.8px )
+            bottom: -3%
+    .el-2
+        width: 20%
+        right: 10%
+        top: 15%
+        max-width: size-pc(300,rem)
+        object-fit: contain
+        z-index: 7
+        @media screen and ( max-width: 991.8px )
+            top: 30%
+    .el-b
+        opacity: 0
+    &-img-group
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        overflow: hidden
+        // display: grid
+        // grid-template-areas: "stack"
+        background-color: #413735
+
+        .parallax-container
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            z-index: 5
+            .fx-wrap
+                left: 45%
+                top: 55%
+                transform: translate(-50%, -50%)
+                @media screen and ( max-width: 991.8px )
+                    left: 38%
+                @media screen and ( max-width: 767.8px )
+                    left: 35%
+                @media screen and ( max-width: 575.8px )
+                    left: 23%
+                @media screen and ( max-width: 400.8px )
+                    left: 25%
+                h1
+                    white-space: nowrap
+                    font-size: size-pc(260,rem)
+                    color: $color-2
+                    -webkit-text-fill-color: transparent
+                    -webkit-text-stroke-width: 3px
+                    -webkit-text-stroke-color: $color-2
+                    font-family: $font-title
+                    font-weight: 400
+                    @media screen and ( max-width: 991.8px )
+                        font-size: size-pc(180,rem)
+                        -webkit-text-stroke-width: 2px
+                    @media screen and ( max-width: 767.8px )
+                        font-size: size-pc(150,rem)
+                        -webkit-text-stroke-width: 2px
+                    @media screen and ( max-width: 575.8px )
+                        font-size: size-pc(100,rem)
+                        -webkit-text-stroke-width: 1px
+                    @media screen and ( max-width: 400.8px )
+                        font-size: size-pc(90,rem)
+                        -webkit-text-stroke-width: 1px
+        .subtitle
+            position: absolute
+            top: 20%
+            left: 50%
+            transform: translate(-50%, -50%)
+            z-index: 5
+            @media screen and ( max-width: 991.8px )
+                top: 25%
+            h2
+                .char
+                    opacity: 0
+        .content
+            h2
+                color: #fff
+                font-family: $font-body
+                font-weight: 400
+                font-size: size-pc(50,rem)
+                white-space: nowrap
+                @media screen and ( max-width: 991.8px )
+                    font-size: size-pc(50,rem)
+                @media screen and ( max-width: 767.8px )
+                    font-size: size-pc(45,rem)
+                @media screen and ( max-width: 575.8px )
+                    font-size: size-pc(35,rem)
+
+        .overlay
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            background-color: rgba(#413735,0.3)
+            z-index: 4
+        > img
+            // grid-area: stack
+            object-fit: contain
+            object-position: center
+            width: 100%
+            left: 0
+            // height: 100%
+            // animation-name: parallax
+            // animation-timing-function: linear
+            // animation-timeline: scroll()
+            position: absolute
+            &.moon
+                // max-width: size-pc(1000, rem)
+                bottom: -6%
+                width: 50%
+                left: 25%
+                z-index: 2
+                @media screen and ( max-width: 575.82px )
+                    left: 5%
+                    right: 5%
+                    width: 90%
+                    max-width: unset
+                    
+            &.bg
+                object-fit: contain
+                bottom: -14%
+                z-index: 3
+                @media screen and ( max-width: 767.82px )
+                    left: -30%
+                    right: -30%
+                    width: 160%
+                    bottom: -14%
+                    max-width: unset
+                @media screen and ( max-width: 767.82px )
+                    left: -50%
+                    right: -50%
+                    width: 200%
+            &.building
+                object-fit: contain
+                bottom: 0
+                z-index: 6
+                @media screen and ( max-width: 767.82px )
+                    left: -20%
+                    right: -20%
+                    width: 140%
+                    max-width: unset
+                @media screen and ( max-width: 767.82px )
+                    left: -40%
+                    right: -40%
+                    width: 180%
+
+
+//         @for $i from 0 through 8
+//             > .parallax_#{$i}
+//                 --speed: 100 * #{$i}
+
+// @keyframes parallax
+//     to
+//         transform: translateY(calc(var(--speed) * 10px))
+
+.adventure
+    &-section
+        padding: size-pc(120,rem) 0
+        @media screen and ( max-width: 767.82px )
+            padding: size-pc(80,rem) 0 0
+    &-desc
+        max-width: size-pc(1400,rem)
+        padding: 0 20px
+        margin: auto
+        text-transform: uppercase
+        font-size: size-pc(36,rem)
+    &-img
+        position: relative
+        width: fit-content
+        margin-left: auto
+        margin-right: 0
+        margin-top: size-pc(80,rem)
+        .text-animation
+            position: absolute
+            perspective: 40vw
+            top: 5%
+            right: 35%
+            z-index: 2
+            color: $color-primary
+            @media screen and ( max-width: 767.82px )
+                top: size-pc(-250,rem)
+                right: unset
+                left: 3%
+            @media screen and ( max-width: 575.82px )
+                top: size-pc(-70,rem)
+
+        .col-img
+            width: 60vw
+            margin-left: auto
+            margin-right: 0
+            @media screen and ( max-width: 767.82px )
+                width: 100vw
+                margin-top: size-pc(260,rem)
+            @media screen and ( max-width: 575.82px )
+                margin-top: size-pc(150,rem)
+        &-box
+            position: relative
+            @include thumb-img(68%,cover)
+            z-index: 3
+            overflow: hidden
+            @media screen and ( max-width: 767.82px )
+                @include thumb-img(100%,cover)
+            .imago
+                position: absolute
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+            img
+                z-index: 2
+                height: 120%
+                transition: unset
+            .text-animation
+                color: #fff
+                z-index: 3
+.tour
+    &-section
+        background: linear-gradient(to right, $color-primary 70%, $color-2 70%)
+        overflow: unset
+        margin-top: size-pc(100,rem)
+        @media screen and ( max-width: 767.82px )
+            margin-top: size-pc(0,rem)
+            background: linear-gradient(to right, $color-primary 95%, $color-2 95%)
+    &-content
+        .content
+            position: relative
+            z-index: 2
+            width: 100%
+            max-width: size-pc(1000,rem)
+            padding: size-pc(60,rem)
+            color: #fff
+            @media screen and ( max-width: 767.82px )
+                padding: 30px 20px
+            h3
+                color: $color-2
+            h2
+                color: #fff
+                text-transform: uppercase
+                font-weight: 300
+            p
+                max-width: size-pc(500,rem)
+            .btn
+                width: fit-content
+        .number-slide
+            position: absolute
+            z-index: 19
+            bottom: size-pc(10,rem)
+            color: #fff
+            left: 62%
+            @media screen and ( max-width: 767.82px )
+                left: 15px
+            .swiper-pagination
+                display: flex
+                span
+                    margin: 0 15px
+
+    &-img
+        position: absolute
+        width: 65%
+        right: 0
+        top: size-pc(-100,rem)
+        bottom: size-pc(80,rem)
+        z-index: 1
+        @media screen and ( max-width: 767.82px )
+            position: relative
+            width: 100%
+            top: 0
+            bottom: 0
+            height: 100vw
+
+        .text-animation
+            position: absolute
+            z-index: 3
+            color: #fff
+            perspective: 40vw
+            top: -4%
+            right: 0%
+            z-index: 2
+
+        .swiper-img-tour
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            position: absolute
+            &::after
+                position: absolute
+                z-index: 2
+                width: 28%
+                height: 100%
+                top: 0
+                left: 0
+                content: ''
+                background-color: $color-primary
+                opacity: 0.5
+            .swiper-slide
+                overflow: hidden
+                &-active
+                    z-index: 3
+            .img
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                position: absolute
+
+                img
+                    width: 120%
+                    height: 120%
+                    position: absolute
+                    top: -10%
+                    transition: unset
+                    left: 0
+                    object-fit: cover
+                    z-index: 1
+.discover
+    &-section
+        padding: size-pc(120,rem) 0
+        // margin: size-pc(120,rem) 0
+        overflow: unset
+        position: relative
+        background-color: #EFE5D0
+        @media screen and ( max-width: 767.82px )
+            padding: size-pc(90,rem) 0 size-pc(50,rem)
+        &::before
+            background-image: url(bg.jpeg)
+            background-repeat: repeat
+            background-size: 100%
+            position: absolute
+            content: ''
+            width: 100%
+            height: 100%
+            top: 0
+            opacity: 0.3
+            left: 0
+            mix-blend-mode: multiply
+    &-content
+        max-width: size-pc(960,rem)
+        margin: 0 auto
+        padding: 0 20px
+        position: relative
+        z-index: 2
+        p
+            text-transform: uppercase
+            font-size: size-pc(34,rem)
+            font-weight: 500
+        .btn
+            margin-top: size-pc(50,rem)
+            width: fit-content
+    &-title
+        margin: size-pc(120,rem) 0
+        position: relative
+        @media screen and ( max-width: 767.82px )
+            margin: size-pc(50,rem) 0 size-pc(70,rem)
+        .text-animation
+            position: absolute
+            z-index: 3
+            color: $color-primary
+            z-index: 1
+            top: -5%
+            left: 50%
+            transform: translateX(-50%)
+            white-space: nowrap
+            @media screen and ( max-width: 767.82px )
+                left: 52%
+    &-img
+        display: flex
+        mask-image: url(mask.png)
+        mask-repeat: no-repeat
+        mask-size: 100%
+        height: 40vw
+        position: relative
+        overflow: unset
+        z-index: 2
+        .text-animation
+            color: #fff
+        .box-img
+            width: 33.333333%
+            position: relative
+        img
+            position: absolute
+            top: -10%
+            width: 120%
+            object-fit: cover
+            height: 120%
+            // &:nth-child(1)
+            //     margin-top: 7.5%
+            // &:nth-child(2)
+            //     margin-top: 15%
+
+        // .img
+        //     // position: relative
+        //     overflow: hidden
+        //     margin: 0 size-pc(50,rem)
+        //     z-index: 2
+        //     .text-animation
+        //         color: #fff
+        //         z-index: 1
+        //     &.__1
+        //         margin-top: size-pc(100,rem)
+        //     &.__2
+        //         margin-top: size-pc(200,rem)
+
+.choose
+    &-section
+        padding: size-pc(120,rem) 0 0
+        @media screen and ( max-width: 767.82px )
+            padding: size-pc(90,rem) 0 0
+        .row-item
+            [class*='col-']
+                margin-top: size-pc(110,rem)
+                @media screen and ( max-width: 991.82px )
+                    margin-top: size-pc(40,rem)
+                &:nth-child(2)
+                    margin-top: 0
+                    @media screen and ( max-width: 991.82px )
+                        margin-top: size-pc(40,rem)
+        .content
+            margin-bottom: size-pc(110,rem)
+            @media screen and ( max-width: 767.82px )
+                   margin-bottom: size-pc(10,rem)
+    &-item
+        @include thumb-img(120%,cover)
+        overflow: hidden
+        img
+            width: 120%
+            height: 120%
+            top: -10%
+            transition: unset
+        h3
+            font-size: size-pc(110,rem)
+
+        &:hover
+            .choose-title
+                opacity: 0
+                visibility: hidden
+            .choose-content
+                opacity: 1
+                visibility: visible
+    &-title
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        display: flex
+        align-items: center
+        justify-content: center
+        color: #fff
+        transition: all .3s ease
+        visibility: visible
+    &-content
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        background-color: rgba(#316B7F,0.7)
+        color: #fff
+        backdrop-filter: blur(3px)
+        padding: size-pc(40,rem)
+        display: flex
+        flex-direction: column
+        transition: all .3s ease
+        opacity: 0
+        visibility: hidden
+        a
+            margin: auto
+            margin-bottom: 0
+            margin-left: 0
+            color: #fff
+            font-size: size-pc(32,rem)
+            font-family: $font-title
+            font-weight: bold
+            display: flex
+            align-items: center
+            i
+                border: 1px solid #fff
+                width: size-pc(45,rem)
+                height: size-pc(45,rem)
+                font-size: size-pc(22,rem)
+                border-radius: 50%
+                display: flex
+                align-items: center
+                justify-content: center
+                margin-right: 15px
+    &-img
+        &-content
+            padding-top: size-pc(150,rem)
+            margin-top: size-pc(120,rem)
+            position: relative
+            @media screen and ( max-width: 767.82px )
+                padding-top: size-pc(30,rem)
+                margin-top: size-pc(30,rem)
+        &-c
+            background-color: $color-2
+            width: 45%
+            z-index: 3
+            position: relative
+            @media screen and ( max-width: 767.82px )
+                width: 100%
+
+            .swiper-choose-content
+                margin-left: size-pc(80,rem)
+                background-color: $color-primary
+                @media screen and ( max-width: 767.82px )
+                    margin-left: size-pc(40,rem)
+                .content-box
+                    padding: size-pc(60,rem)
+                    color: #fff
+                    min-height: size-pc(350,rem)
+                    @media screen and ( max-width: 767.82px )
+                        min-height: unset
+                        padding: size-pc(40,rem)
+                    p
+                        font-size: size-pc(26,rem)
+            .nav-choose
+                padding: size-pc(30,rem) size-pc(60,rem)
+                display: flex
+                color: #fff
+                margin: 0 -8px
+        &-i
+            position: absolute
+            right: 0
+            bottom: 0
+            top: 0
+            left: 40%
+            z-index: 1
+            @media screen and ( max-width: 767.82px )
+                position: relative
+                left: 0
+                height: 80vw
+            .swiper-choose-img
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                position: absolute
+                pointer-events: none
+                .swiper-slide
+                    overflow: hidden
+                    .img-box
+                        img
+                            // transform: scale(1.1)
+                    &-active
+                        z-index: 3
+                &::after
+                    position: absolute
+                    z-index: 2
+                    width: 28%
+                    height: 100%
+                    top: 0
+                    left: 0
+                    content: ''
+                    background-color: $color-primary
+                    opacity: 0.5
+            .img-box
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                position: absolute
+                img
+                    width: 120%
+                    height: 120%
+                    position: absolute
+                    top: -10%
+                    transition: unset
+                    left: 0%
+                    object-fit: cover
+
+                    z-index: 1
+
+.follow
+    &-section
+        background-color: $color-primary
+        padding: size-pc(120,rem) 0 0
+        @media screen and ( max-width: 767.82px )
+            padding: size-pc(90,rem) 0 0
+    &-title
+        display: flex
+        justify-content: space-between
+        position: relative
+        z-index: 1
+        .text-animation
+            .stagger-fade-rotate-words
+                color: #fff
+                &:first-child
+                    color: $color-2
+    &-btn
+        margin-top: size-pc(30,rem)
+        @media screen and ( max-width: 767.82px )
+            margin-top: size-pc(0,rem)
+    &-img
+        position: relative
+        z-index: 2
+        margin-top: size-pc(-130,rem)
+        @media screen and ( max-width: 767.82px )
+            margin-top: size-pc(20,rem)
+        > *
+            position: relative
+            z-index: 4
+        &::before
+            position: absolute
+            content: ''
+            width: 100%
+            bottom: 0
+            top: 50%
+            left: 0
+            background: #efe5d0
+            z-index: 2
+        &::after
+            background-image: url(bg.jpeg)
+            background-repeat: repeat
+            background-size: 100%
+            position: absolute
+            content: ''
+            width: 100%
+            bottom: 0
+            top: 50%
+            opacity: 0.3
+            left: 0
+            mix-blend-mode: multiply
+            z-index: 3
+
+        &-el
+            position: absolute
+            left: 0
+            height: 50%
+            top: 0
+            &.is-inview
+                &::before
+                    height: 75%
+            &::before,&::after
+                position: absolute
+                content: ''
+            &::before
+                height: 0
+                width: size-pc(3,rem)
+                background-color: $color-2
+                left: size-pc(75,rem)
+                top: 25%
+                transition: all 1s ease
+                transform-origin: bottom
+                @media screen and ( max-width: 767.82px )
+                   left: size-pc(50,rem)
+                @media screen and ( max-width: 575.82px )
+                    left: size-pc(35,rem)
+            &::after
+                width: size-pc(150,rem)
+                height: size-pc(150,rem)
+                background-color: $color-2
+
+                bottom: 0
+                z-index: 1
+                shape-outside: circle(50% at 50% 100%)
+                clip-path: circle(50% at 50% 100%)
+                @media screen and ( max-width: 767.82px )
+                    width: size-pc(100,rem)
+                    height: size-pc(100,rem)
+                @media screen and ( max-width: 575.82px )
+                    width: size-pc(70,rem)
+                    height: size-pc(70,rem)
+        &-row
+            [class*='col-']
+                @media screen and ( max-width: 767.82px )
+                    --bs-gutter-x: 1rem
+                &:nth-of-type(2)
+                    margin-top: size-pc(200,rem)
+                    @media screen and ( max-width: 767.82px )
+                        margin-top: size-pc(160,rem)
+
+        &-item
+            @include thumb-img(114%,cover)
+            overflow: hidden
+            margin-bottom: calc(var(--bs-gutter-x))
+            img
+                height: 120%
+                top: -10%
+                transition: unset
+    &-content
+        position: relative
+        padding: size-pc(100,rem) size-pc(20,rem)
+        background: #efe5d0
+        text-align: center
+        @media screen and ( max-width: 767.82px )
+            padding: size-pc(70,rem) size-pc(20,rem)
+        > *
+            position: relative
+            z-index: 2
+        &::before
+            background-image: url(bg.jpeg)
+            background-repeat: repeat
+            background-size: 100%
+            position: absolute
+            content: ''
+            width: 100%
+            bottom: 0
+            top: 0%
+            opacity: 0.3
+            left: 0
+            mix-blend-mode: multiply
+            z-index: 0
+        h3
+            max-width: size-pc(1300,rem)
+            margin: 0 auto size-pc(50,rem)
+            text-transform: uppercase
+            color: $color-primary
+            font-size: size-pc(60,rem)
+            @media screen and ( max-width: 767.82px )
+                font-size: size-pc(50,rem)
+        .btn
+            margin: auto
+.home-2-section
+    padding: size-pc(120,rem) 0
+    background-color: $color-bg-2
+    overflow: unset
+    position: relative
+    // z-index: 1
+
+    @media screen and ( max-width: 767.8px )
+        padding: size-pc(90,rem) 0
+    .content
+        h2
+            color: #fff
+    .el-bg
+        position: absolute
+        max-height: 100%
+        &.el-b-1
+            width: 30%
+            max-width: size-pc(350,rem)
+            bottom: 0
+            left: 0
+            overflow: hidden
+        &.el-b-2
+            width: 30%
+            max-width: size-pc(350,rem)
+            bottom: 0
+            right: 0
+            overflow: hidden
+        &.el-1
+            width: 20%
+            max-width: size-pc(280,rem)
+            top: -15%
+            left: -5%
+        &.el-2
+            width: 20%
+            max-width: size-pc(280,rem)
+            top: 40%
+            left: -3%
+        &.el-3
+            width: 20%
+            max-width: size-pc(200,rem)
+            top: 20%
+            right: 12%
+            @media screen and ( max-width: 767.8px )
+                right: -10%
+        &.el-4
+            width: 20%
+            max-width: size-pc(270,rem)
+            bottom: -8%
+            right: -3%
+        &.el-5
+            width: 30%
+            max-width: size-pc(240,rem)
+            bottom: -0%
+            left: 12%
+            @media screen and ( max-width: 767.8px )
+                left: 5%
+.home-3-section
+    position: relative
+    padding: size-pc(120,rem) 0
+    background-color: $color-bg-2
+    overflow: unset
+    position: relative
+    background-color: $color-bg-1
+    z-index: 3
+    @media screen and ( max-width: 767.8px )
+        padding: size-pc(90,rem) 0
+    .el-bg
+        position: absolute
+        max-height: 100%
+        &.el-b
+            width: 68%
+            max-width: size-pc(1700,rem)
+            bottom: 0
+            left: 50%
+        &.el-b-t
+            width: 40%
+            max-width: size-pc(300,rem)
+            bottom: 2%
+            right: -3%
+        &.el-1
+            width: 20%
+            max-width: size-pc(300,rem)
+            top: -7%
+            left: -9%
+            z-index: 1
+    .dot-top
+        position: absolute
+        top: 0
+        height: size-pc(120,rem)
+        width: 100%
+        transform: translateY(-50%)
+        background: radial-gradient(ellipse at center, $color-bg-1 0%, $color-bg-1 40%, transparent 40%)
+        background-size: size-pc(120,rem) size-pc(120,rem)
+    .content
+        h2
+            span
+                color: $color-2
+            .white
+                span
+                    color: #fff
+        p
+            color: #fff
+    .news-item
+        margin-bottom: size-pc(70,rem)
+        @media screen and ( max-width: 767.8px )
+            margin-bottom: size-pc(40,rem)
+        &.__about-item
+            position: relative
+            .thumb-img
+                @include thumb-img(80%,cover)
+            .news-content
+                position: absolute
+                bottom: 0
+                left: 0
+                width: 100%
+                height: 100%
+                display: flex
+                flex-direction: column
+                justify-content: flex-end
+                padding: 15px
+                margin: 0
+                background: linear-gradient(to top, #23181C, transparent)
+                h3 
+                    font-size: size-pc(32,rem)
+                p 
+                    margin: 0
+                    font-size: size-pc(22,rem)
+        .thumb-img
+            @include thumb-img(62%,cover)
+            overflow: hidden
+            img
+                transition: all .5s ease
+                &:hover
+                    transform: scale(1.05)
+            .link
+                position: absolute
+                width: size-pc(70,rem)
+                height: size-pc(70,rem)
+                color: #fff
+                display: flex
+                align-items: center
+                justify-content: center
+                z-index: 3
+                background-color: $color-2
+                right: 20px
+                bottom: 20px
+                &:hover
+                    background-color: #fff
+                    color: $color-text
+        .news-content
+            display: flex
+            color: #fff
+            margin: size-pc(30,rem) 0
+            @media screen and ( max-width: 767.8px )
+                flex-direction: column
+            .title
+                flex: 0 0 50%
+                margin-bottom: size-pc(30,rem)
+                @media screen and ( min-width: 768px )
+                    padding-right: 20px
+                .cate 
+                    font-size: size-pc(24,rem)
+                    @media screen and ( max-width: 767.82px )
+                        font-size: size-pc(28,rem)
+                a
+                    color: #fff
+                    
+                    &:hover
+                        color: $color-2
+                h3
+                    color: #fff
+                    font-size: size-pc(40,rem)
+            .desc 
+                p 
+                    font-size: size-pc(24,rem)
+                    @media screen and ( max-width: 767.82px )
+                        font-size: size-pc(28,rem)
+.home-4-section
+    position: relative
+    padding: size-pc(120,rem) 0
+    background-color: $color-bg-2
+    overflow: unset
+    position: relative
+    background-color: $color-bg-2
+    z-index: 1
+    @media screen and ( max-width: 767.8px )
+        padding: size-pc(90,rem) 0
+    .el-bg
+        position: absolute
+        &.el-1
+            width: 30%
+            max-width: size-pc(350,rem)
+            top: -13%
+            left: -5%
+            z-index: 2
+        &.el-2
+            bottom: -5%
+            right: -10%
+            width: 25%
+            max-width: size-pc(400,rem)
+            z-index: 3
+    .content
+        h2
+            color: #fff
+        p
+            color: #fff
+    .thumb-video
+        position: relative
+        padding: size-pc(20,rem)
+        margin: size-pc(20,rem) size-pc(20,rem)
+        margin-bottom: size-pc(20,rem)
+        &::before
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            content: ''
+            background: linear-gradient(-150deg, #edebe2 10% ,#fff)
+            position: absolute
+        .video 
+            @include thumb-img(60%, cover)
+            video 
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                position: absolute
+                object-fit: cover
+        .tape-el
+            
+            z-index: 1
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            pointer-events: none
+            .el-1,.el-2
+                background-image: url(tape.png)
+                width: 120px
+                height: 45px
+                background-repeat: no-repeat
+                background-size: 100% 100%
+                position: absolute
+                z-index: 1
+                @media screen and ( max-width: 767.82px )
+                    width: 70px
+                    height: 30px
+            .el-1 
+                top: -0px
+                left: -30px
+                transform: rotate(-45deg)
+                @media screen and ( max-width: 767.82px )
+                    left: -20px
+            .el-2 
+                right: -30px
+                bottom: 0
+                transform: rotate(-45deg)
+                @media screen and ( max-width: 767.82px )
+                    right: -20px
+    .dot-top
+        position: absolute
+        top: 0
+        height: size-pc(120,rem)
+        width: 100%
+        transform: translateY(-50%)
+        background: radial-gradient(ellipse at center, $color-bg-2 0%, $color-bg-2 40%, transparent 40%)
+        background-size: size-pc(120,rem) size-pc(120,rem)
+    .box-img
+        display: flex
+        align-items: flex-end
+        width: calc(100% - 30px)
+        margin: 0 -15px
+        @media screen and ( max-width: 991.8px )
+            margin-top: 30px
+        .box-img-1,.box-img-2
+            flex: 0 0 50%
+            width: 100%
+            margin: 0 15px
+            position: relative
+            .el
+                position: absolute
+        .box-img-1
+            .el
+                bottom: -30%
+                left: 0
+                width: 35%
+                @media screen and ( max-width: 767.8px )
+                    bottom: -15%
+        .box-img-2
+            .el
+                right: -6%
+                top: -20%
+                width: 30%
+        .thumb-img-1
+
+            @include thumb-img(180%,cover)
+            img
+                padding: 4%
+            &::after
+                background-image: url('thumb-1.png')
+                background-size: 100% 100%
+                position: absolute
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                content: ''
+                opacity: 1
+        .thumb-img-2
+
+            @include thumb-img(126%,cover)
+            img
+                padding: 4%
+            &::after
+                background-image: url('thumb-2.png')
+                background-size: 100% 100%
+                position: absolute
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                content: ''
+                opacity: 1
+.home-5-section
+    position: relative
+    padding: size-pc(120,rem) 0 size-pc(300,rem)
+    background-color: $color-bg-2
+    overflow: hidden
+    position: relative
+    background-color: $color-bg-2
+    z-index: 0
+    @media screen and ( max-width: 767.8px )
+        padding: size-pc(90,rem) 0 size-pc(250,rem)
+    .el-bg
+        position: absolute
+        &.el-1
+            width: 60%
+            max-width: size-pc(1050,rem)
+            bottom: -5%
+            left: -8%
+            @media screen and ( max-width: 767.8px )
+                width: 90%
+                bottom: 0
+        &.el-2
+            bottom: -3%
+            left: -3%
+            width: 40%
+            max-width: size-pc(300,rem)
+            z-index: 3
+    .row
+        margin-left: 0
+        margin-right: 0
+
+    .link-item
+        border-top: 1px solid #F3F1EA
+        padding: size-pc(40,rem) 0
+        position: relative
+        &:last-child
+            border-bottom: 1px solid #F3F1EA
+        a
+            color: #fff
+            display: block
+            width: fit-content
+            &:hover
+                color: $color-2
+        h2
+            font-size: size-pc(52,rem)
+            @media screen and ( max-width: 767.82px )
+                font-size: size-pc(42,rem)
+            @media screen and ( max-width: 575.82px )
+                font-size: size-pc(35,rem)
+        p
+            color: #fff
+            max-width: size-pc(500,rem)
+        .link-icon
+            position: absolute
+            width: size-pc(70,rem)
+            height: size-pc(70,rem)
+            color: #fff
+            display: flex
+            align-items: center
+            justify-content: center
+            z-index: 3
+            background-color: $color-2
+            right: 0px
+            top: size-pc(40,rem)
+            &:hover
+                background-color: #fff
+                color: $color-text
+.content-map
+    .map
+        
+        &-item 
+            // background: linear-gradient(-150deg, #edebe2 10% ,#fff)
+            position: relative
+            padding: size-pc(20,rem)
+            margin: 0 size-pc(90,rem)
+            margin-bottom: size-pc(90,rem)
+            margin-top: size-pc(60,rem)
+            @media screen and ( max-width: 767.8px )
+                margin-bottom: size-pc(150,rem)
+            &::before
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                content: ''
+                background: #fff
+                position: absolute
+            .shadow
+                position: absolute
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                box-shadow: unset!important
+                overflow: unset
+                z-index: -1
+                > * 
+                    position: absolute
+                    background-size: contain
+                    background-repeat: no-repeat
+                    height: 100%
+                    background-size: 100% 100%
+                &-1
+                    background-image: url(sd-1.png)
+                    width: 45%
+                    height: 50%
+                    top: 13px
+                    left: -13px
+                    background-position: top left
+                    
+                &-2
+                    background-image: url(sd-2.png)
+                    width: 45%
+                    top: 3px
+                    right: -13px
+                    background-position: top left
+                &-3
+                    background-image: url(sd-3.png)
+                    width: 94%
+                    bottom: -15px
+                    right: -13px
+                    background-position: bottom right
+                &-4
+                    background-image: url(sd-4.png)
+                    width: 94%
+                    bottom: 10px
+                    left: -15px
+                    background-position: bottom right
+                    
+        &-tape 
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            .tape-number
+                position: absolute
+                top: -4%
+                right: -5%
+                z-index: 2
+                transform: rotate(40deg)
+                background-image: url(tape.png)
+                width: 90px
+                height: 45px
+                background-repeat: no-repeat
+                background-size: 100% 100%
+                
+            .tape-el
+                background-image: url(tape.png)
+                width: 90px
+                height: 45px
+                z-index: 1
+                position: absolute
+                background-repeat: no-repeat
+                background-size: 100% 100%
+                bottom: -5%
+                left: -6%
+                transform: rotate(40deg)
+
+        &-img
+            width: 100%
+            @include thumb-img(60%,cover)
+            margin-bottom: size-pc(20,rem)
+        &-content 
+            text-align: center
+            position: relative
+            z-index: 3
+            p 
+                margin-bottom: 0
+                font-size: size-pc(23,rem)
+.pick-up 
+    &-section 
+        padding: size-pc(120,rem) 0
+        background-color: $color-bg-3
+        position: relative
+        overflow: unset
+        @media screen and ( max-width: 767.8px )
+            padding: size-pc(90,rem) 0
+        // &.bg-sub 
+        //     background-color: $color-bg-2
+        //     color: #fff
+        //     &::before
+        //         mix-blend-mode: multiply
+        //     a
+        //         color: $color-2
+        //     .content 
+        //         .black
+        //             color: #fff
+        //             span
+        //                 color: #fff
+        .swiper-container 
+            overflow: unset
+            @media screen and ( max-width: 767.8px )
+                padding: 0 40px
+                padding-bottom: 50px
+            .swiper-wrapper 
+                @media screen and ( max-width: 991.8px )
+                    flex-wrap: nowrap
+        .dot-top
+            position: absolute
+            top: 0
+            height: size-pc(120,rem)
+            width: 100%
+            transform: translateY(-50%)
+            background: radial-gradient(ellipse at center, $color-bg-3 0%, $color-bg-3 40%, transparent 40%)
+            background-size: size-pc(120,rem) size-pc(120,rem)
+            z-index: 0
+        // &::before
+        //     width: 100%
+        //     height: 100%
+        //     top: 0
+        //     left: 0
+        //     position: absolute
+        //     content: ""
+        //     background: url('img-bg.png')
+        //     z-index: 1
+        //     background-size: 245px
+        //     background-repeat: repeat
+        .container 
+            z-index: 2
+    &-line 
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%,-50%)
+
+        width: 100vw
+        @media screen and ( max-width: 767.82px )
+            height: 100%
+        &.line-pick-1
+            
+            @media screen and ( max-width: 767.82px )
+                display: none
+        &.line-pick-2
+            display: none
+            width: 100%
+            text-align: center
+            @media screen and ( max-width: 767.82px )
+                display: block
+            #line-2
+                margin: auto
+                width: size-pc(210,rem)
+            
+                
+
+        svg 
+            width: 110vw
+            overflow: unset
+    &-item 
+        // background: linear-gradient(-150deg, #edebe2 10% ,#fff)
+        position: relative
+        padding: size-pc(20,rem)
+        margin: 0 size-pc(90,rem)
+        margin-bottom: size-pc(90,rem)
+        @media screen and ( max-width: 767.8px )
+            margin: unset
+            margin-bottom: size-pc(0,rem)
+        &::before
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            content: ''
+            background: linear-gradient(-150deg, #edebe2 10% ,#fff)
+            position: absolute
+        .shadow
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            box-shadow: unset!important
+            overflow: unset
+            z-index: -1
+            > * 
+                position: absolute
+                background-size: contain
+                background-repeat: no-repeat
+                height: 100%
+            &-1
+                background-image: url(sd-1.png)
+                width: 45%
+                
+                top: 13px
+                left: -13px
+                background-position: top left
+            &-2
+                background-image: url(sd-2.png)
+                width: 45%
+                top: 3px
+                right: -13px
+                background-position: top left
+            &-3
+                background-image: url(sd-3.png)
+                width: 94%
+                bottom: -15px
+                right: -13px
+                background-position: bottom right
+            &-4
+                background-image: url(sd-4.png)
+                width: 94%
+                bottom: 10px
+                left: -15px
+                background-position: bottom right
+                
+    &-tape 
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        .tape-number
+            position: absolute
+            top: -5%
+            left: 10%
+            z-index: 2
+            color: $color-2
+            font-size: 45px
+            font-family: $font-number
+            font-weight: 400
+            &::before
+                position: absolute
+                background-image: url(tape.png)
+                width: 90px
+                height: 45px
+                content: ''
+                background-repeat: no-repeat
+                background-size: 100% 100%
+                z-index: -1
+        .tape-el
+            background-image: url(tape.png)
+            width: 90px
+            height: 45px
+            z-index: 1
+            position: absolute
+            background-repeat: no-repeat
+            background-size: 100% 100%
+
+    &-img
+        width: 100%
+        @include thumb-img(100%,cover)
+        margin-bottom: size-pc(20,rem)
+    &-content 
+        text-align: right
+        position: relative
+        z-index: 3
+        h3 
+            margin-bottom: 0
+            font-size: size-pc(28,rem)
+    &-container 
+        position: relative
+        margin-top: size-pc(90,rem)
+        .col-md-4
+            &:nth-child(1)
+                transform: rotate(-5deg)
+                .pick-up-item 
+                    .pick-up-tape
+                        .tape-number
+                            left: 15%
+                            &::before
+                                top: 8px
+                                left: -36px
+                                transform: rotate(80deg)
+                        .tape-el
+                            left: -28px
+                            bottom: -20px
+                            transform: rotate(36deg)
+                    .shadow
+                        &-4 
+                            display: none
+            &:nth-child(2)
+                transform: rotate(5deg)
+                .pick-up-item 
+                    .pick-up-tape
+                        .tape-number
+                            left: 48%
+                            &::before
+                                top: 10px
+                                left: -31px
+                                transform: rotate(80deg)
+                        .tape-el
+                            left: 10px
+                            bottom: 10px
+                            transform: rotate(113deg)
+                    .shadow
+                        &-4,&-1 
+                            display: none
+            &:nth-child(3)
+                transform: rotate(-5deg)
+                .pick-up-item 
+                    .pick-up-tape
+                        .tape-number
+                            left: 35%
+                            &::before
+                                top: 10px
+                                left: -31px
+                                transform: rotate(105deg)
+                        .tape-el
+                            display: none
+                    .shadow
+                        &-4
+                            display: none
+                
+.how-to
+    &_nav 
+        display: none
+        margin-top: size-pc(100,rem)
+        @media screen and ( max-width: 991.82px )
+            display: flex
+            align-items: center
+        .dif_arrow-wrap
+            display: flex
+            align-items: center
+            font-size: size-pc(30,rem)
+            margin-top: 2px
+        .dif_arrow
+            margin-right: size-pc(20,rem)
+            transition: all .3s ease
+            &.swiper-button-disabled
+                opacity: 0.4
+        &-bg 
+            width: 100%
+            height: 2px
+            background: rgba($color-2,0.36)
+            position: relative
+            overflow: hidden
+        &-fill
+            padding-right: 10px
+            background-color: $color-2
+            height: 100%
+            width: 0
+    &_p
+        white-space: nowrap
+        font-size: size-pc(24,rem)
+        padding-left: size-pc(20,rem)
+        margin-bottom: 0
+    &-section 
+        padding: size-pc(120,rem) 0
+        background-color: $color-bg-3
+        position: relative
+        z-index: 4
+        overflow: unset
+        @media screen and ( max-width: 767.8px )
+            padding: size-pc(90,rem) 0
+        .swiper-container 
+            overflow: unset
+            @media screen and ( max-width: 767.8px )
+                padding: 0 40px
+                padding-bottom: 50px
+            .swiper-wrapper 
+                @media screen and ( max-width: 991.8px )
+                    flex-wrap: nowrap
+        .dot-top
+            position: absolute
+            top: 0
+            height: size-pc(120,rem)
+            width: 100%
+            transform: translateY(-50%)
+            background: radial-gradient(ellipse at center, $color-bg-3 0%, $color-bg-3 40%, transparent 40%)
+            background-size: size-pc(120,rem) size-pc(120,rem)
+            z-index: 0
+        // &::before
+        //     width: 100%
+        //     height: 100%
+        //     top: 0
+        //     left: 0
+        //     position: absolute
+        //     content: ""
+        //     background: url('img-bg.png')
+        //     z-index: 1
+        //     background-size: 245px
+        //     background-repeat: repeat
+        .container 
+            z-index: 2
+    &-line 
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%,-50%)
+
+        width: 100vw
+        svg 
+            width: 100vw
+            overflow: unset
+    &-item 
+        // background: linear-gradient(-150deg, #edebe2 10% ,#fff)
+        position: relative
+        padding: size-pc(20,rem)
+        margin: 0 size-pc(90,rem)
+        margin-bottom: size-pc(100,rem)
+        @media screen and ( max-width: 991.82px )
+            margin: unset
+        &::before
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            content: ''
+            background: linear-gradient(-150deg, #edebe2 10% ,#fff)
+            position: absolute
+        .shadow
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            box-shadow: unset!important
+            overflow: unset
+            z-index: -1
+            > * 
+                position: absolute
+                background-size: contain
+                background-repeat: no-repeat
+                height: 100%
+            &-1
+                background-image: url(sd-1.png)
+                width: 45%
+                
+                top: 13px
+                left: -13px
+                background-position: top left
+            &-2
+                background-image: url(sd-2.png)
+                width: 45%
+                top: 3px
+                right: -13px
+                background-position: top left
+            &-3
+                background-image: url(sd-3.png)
+                width: 94%
+                bottom: -15px
+                right: -13px
+                background-position: bottom right
+            &-4
+                background-image: url(sd-4.png)
+                width: 94%
+                bottom: 10px
+                left: -15px
+                background-position: bottom right
+                
+    &-tape 
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        .tape-number
+            position: absolute
+            // top: -5%
+            // left: 10%
+            z-index: 2
+            color: $color-2
+            font-size: 45px
+            font-family: $font-number
+            font-weight: 400
+            &::before
+                position: absolute
+                background-image: url(tape.png)
+                width: 90px
+                height: 45px
+                content: ''
+                background-repeat: no-repeat
+                background-size: 100% 100%
+                z-index: -1
+        .tape-el
+            background-image: url(tape.png)
+            width: 90px
+            height: 45px
+            z-index: 1
+            position: absolute
+            background-repeat: no-repeat
+            background-size: 100% 100%
+
+    &-img
+        width: 100%
+        @include thumb-img(100%,cover)
+        margin-bottom: size-pc(20,rem)
+    &-content 
+        text-align: right
+        position: relative
+        z-index: 3
+        h3 
+            margin-bottom: 0
+            font-size: size-pc(28,rem)
+    &-container 
+        position: relative
+        margin-top: size-pc(90,rem)
+        .col-md-4
+            &:nth-child(4),&:nth-child(5),&:nth-child(6)
+                .how-to-content
+                    text-align: left
+            &:nth-child(1)
+                transform: rotate(-5deg)
+                .how-to-item 
+                    .shadow-3
+                        bottom: 15px
+                    .how-to-tape
+                        .tape-number
+                            left: 30%
+                            &::before
+                                top: 8px
+                                left: -36px
+                                transform: rotate(110deg)
+                        .tape-el
+                            left: -5px
+                            bottom: -30px
+                            transform: rotate(75deg)
+                    .shadow
+                        &-4 
+                            display: none
+            &:nth-child(2)
+                transform: rotate(5deg)
+                .how-to-item 
+                    .how-to-tape
+                        .tape-number
+                            left: 15%
+                            &::before
+                                top: 10px
+                                left: -31px
+                                transform: rotate(80deg)
+                        .tape-el
+                            left: -28px
+                            bottom: -20px
+                            transform: rotate(36deg)
+                    .shadow
+                        &-4,&-1 
+                            display: none
+            &:nth-child(3)
+                transform: rotate(5deg)
+                .how-to-item 
+                    .how-to-tape
+                        .tape-number
+                            left: 45%
+                            &::before
+                                top: 10px
+                                left: -31px
+                                transform: rotate(75deg)
+                        .tape-el
+                            left: 15px
+                            bottom: 10px
+                            transform: rotate(116deg)
+                    .shadow
+                        &-4
+                            display: none
+            &:nth-child(4)
+                transform: rotate(-5deg)
+                .how-to-item 
+                    &::before
+                        background: linear-gradient(140deg, #edebe2 10% ,#fff)
+                    .how-to-tape
+                        .tape-number
+                            left: -4%
+                            top: -5%
+                            &::before
+                                top: 10px
+                                left: -31px
+                                transform: rotate(125deg)
+                        .tape-el
+                            right: -32px
+                            bottom: 46px
+                            transform: rotate(120deg)
+                    .shadow
+                        &-2,&-3
+                            display: none
+            &:nth-child(5)
+                transform: rotate(-5deg)
+                .how-to-item 
+                    .how-to-tape
+                        .tape-number
+                            left: 20%
+                            top: -5%
+                            &::before
+                                top: 10px
+                                left: -31px
+                                transform: rotate(100deg)
+                        .tape-el
+                            right: -35px
+                            bottom: 75px
+                            transform: rotate(25deg)
+                    .shadow
+                        &-4
+                            display: none
+            &:nth-child(6)
+                transform: rotate(5deg)
+                .how-to-item 
+                    .shadow-3
+                        bottom: 15px
+                    .how-to-tape
+                        .tape-number
+                            right: 20%
+                            top: -5%
+                            &::before
+                                top: 10px
+                                left: -31px
+                                transform: rotate(110deg)
+                        .tape-el
+                            left: -35px
+                            bottom: 60px
+                            transform: rotate(135deg)
+                    .shadow
+                        &-4
+                            display: none
+    
+
+.swiper-related
+    .swiper-pagination
+        .swiper-pagination-bullet
+            background-color: transparent
+            width: 18px
+            height: 18px
+            border: 2px solid #23181c
+            opacity: 1
+            position: relative
+            &::before
+                width: 0px
+                height: 0px
+                top: 50%
+                left: 50%
+                transform: translate(-50%,-50%)
+                content: ''
+                position: absolute
+                background-color: #23181c
+                border-radius: 50%
+                // opacity: 0
+                transition: all .3s ease
+            &-active 
+                opacity: 1
+                &::before
+                    width: 10px
+                    height: 10px
+                    // opacity: 1
+
+.review
+    &-section
+        position: relative
+        padding: size-pc(120,rem) 0
+        background-color: $color-bg-2
+        overflow: unset
+        position: relative
+        background-color: $color-bg-1
+        z-index: 0
+        @media screen and ( max-width: 767.8px )
+            padding: size-pc(90,rem) 0
+
+        .content
+            h2
+                span
+                    color: $color-2
+                &.white
+                    span
+                        color: #fff
+            p
+                color: #fff
+    &-title 
+        display: flex
+        justify-content: space-between
+        margin-bottom: size-pc(15,rem)
+    &-name
+        h3 
+            font-size: size-pc(35,rem)
+            margin-bottom: 0
+    &-slide 
+        .swiper-review 
+            padding-bottom: 50px
+        .swiper-pagination
+            &-bullet 
+                border-radius: 10px
+                background-color: $color-2
+                &-active 
+                    width: 20px
+                    border-radius: 10px
+
+        &_nav 
+            display: flex
+            align-items: center
+            margin-top: size-pc(50,rem)
+            .dif_arrow-wrap
+                display: flex
+                align-items: center
+                font-size: size-pc(30,rem)
+                margin-top: 2px
+            .dif_arrow
+                margin-right: size-pc(20,rem)
+                transition: all .3s ease
+                color: #fff
+                &.swiper-button-disabled
+                    opacity: 0.4
+            &-bg 
+                width: 100%
+                height: 2px
+                background: rgba($color-2,0.36)
+                position: relative
+                overflow: hidden
+            &-fill
+                padding-right: 10px
+                background-color: $color-2
+                height: 100%
+                width: 0
+        &_p
+            color: #fff
+            white-space: nowrap
+            font-size: size-pc(24,rem)!important
+            padding-left: size-pc(20,rem)
+            margin-bottom: size-pc(0,rem)
+    &-item 
+        color: #fff
+    &-img 
+        position: relative
+        padding: size-pc(10,rem)
+        margin: size-pc(30,rem) size-pc(0,rem)
+        margin-bottom: size-pc(30,rem)
+        &::before
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            content: ''
+            background: linear-gradient(-150deg, #edebe2 10% ,#fff)
+            position: absolute
+        .img 
+            @include thumb-img(60%, cover)
+        .tape-el
+            
+            z-index: 1
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            .el-1,.el-2
+                background-image: url(tape.png)
+                width: 50px
+                height: 25px
+                background-repeat: no-repeat
+                background-size: 100% 100%
+                position: absolute
+                z-index: 1
+                @media screen and ( max-width: 767.82px )
+                    width: 40px
+                    height: 20px
+    &-rate
+        display: flex
+        padding-left: 15px
+        margin-top: 12px
+        i 
+            margin: 0 3px
+            color: $color-2
+    &-content 
+        position: relative
+       
+        &::before,&::after
+            font-family: "Font Awesome 5 Pro"
+            font-weight: 300
+            position: absolute
+            color: $color-2
+            font-size: size-pc(30,rem)
+        &::before
+            content: "\f10d"
+            top: 0
+            left: size-pc(-12,rem)
+        &::after
+            content: "\f10e"
+            bottom: size-pc(-20,rem)
+            right: 0
+        
+        p 
+            font-size: size-pc(22,rem)
+            margin-bottom: 0
+    &-quote
+        position: relative
+        padding: size-pc(40,rem) size-pc(30,rem) size-pc(20,rem)
+        &::before
+            position: absolute
+            left: 0
+            bottom: 0
+            width: calc(100% - size-pc(50,rem))
+            height: calc(100% - size-pc(50,rem))
+            border: 1px solid $color-2 
+            border-width: 0px 0px 1px 1px
+            content: ''
+        &::after
+            position: absolute
+            right: size-pc(12,rem)
+            top: size-pc(20,rem)
+            width: calc(100% - size-pc(50,rem))
+            height: calc(100% - size-pc(50,rem))
+            border: 1px solid $color-2 
+            border-width: 1px 1px 0px 0px
+            content: ''
+.swiper-review
+    overflow: unset
+    .swiper-slide 
+        &:nth-of-type(3n + 1)
+            .tape-el 
+                .el-1 
+                    top: -0px
+                    left: -15px
+                    transform: rotate(-45deg)
+                    @media screen and ( max-width: 767.82px )
+                        left: -10px
+                .el-2 
+                    right: -15px
+                    bottom: 0
+                    transform: rotate(-45deg)
+                    @media screen and ( max-width: 767.82px )
+                        right: -10px
+        &:nth-of-type(3n + 2)
+            .tape-el
+        
+                .el-1 
+                    bottom: 0px
+                    left: -15px
+                    transform: rotate(45deg)
+                    @media screen and ( max-width: 767.82px )
+                        left: -10px
+                .el-2 
+                    right: -15px
+                    top: 0
+                    transform: rotate(45deg)
+                    @media screen and ( max-width: 767.82px )
+                        right: -10px
+        &:nth-of-type(3n + 3)
+            .tape-el
+                .el-1 
+                    top: 0px
+                    left: -15px
+                    transform: rotate(-45deg)
+                    @media screen and ( max-width: 767.82px )
+                        left: -10px
+                .el-2 
+                    right: -15px
+                    top: 0
+                    transform: rotate(45deg)
+                    @media screen and ( max-width: 767.82px )
+                        right: -10px
+
+.icon 
+    &-section 
+        padding: size-pc(80,rem) 0 size-pc(30,rem)
+        background-color: $color-bg-3
+        overflow: unset
+        position: relative
+        z-index: 0
+        @media screen and ( max-width: 767.8px )
+            padding: size-pc(50,rem) 0
+        .swiper-icon
+            padding-bottom: size-pc(60,rem)
+            .swiper-pagination
+                &-bullet 
+                    border-radius: 10px
+                    background-color: $color-2
+                    &-active 
+                        width: 20px
+    &-item 
+        .thumb-img
+            @include thumb-img(80%,contain)

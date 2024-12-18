@@ -1,0 +1,538 @@
+.parallax-container
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    .fx-wrap
+        position: absolute
+        .fx-target
+            paint-order: stroke fill
+            -webkit-text-stroke-width: 4px
+            -webkit-text-stroke-color: rgba(#EFEEE1,0.7)
+            // text-shadow: -4px -4px 0 #DEDCC4,0 -4px 0 #DEDCC4,4px -4px 0 #DEDCC4,4px  0   0 #DEDCC4,4px  4px 0 #DEDCC4,0    4px 0 #DEDCC4,-4px  4px 0 #DEDCC4,-4px  0   0 #DEDCC4
+            transition: none
+            font-size: size-pc(300,rem)
+            font-weight: 600
+            text-transform: uppercase
+            white-space: nowrap
+            color: transparent
+            margin: 0
+            line-height: 1
+            font-family: $font-slide
+            @media screen and ( max-width: 991.82px )
+                font-size: size-pc(200,rem)
+            @media screen and ( max-width: 767.82px )
+                -webkit-text-stroke-width: 2px
+p 
+    font-size: size-pc(28,rem)
+section
+    position: relative
+    overflow: hidden
+.container
+    position: relative
+
+@import page-home
+@import page-about
+
+@import page-product
+// @import page-faq
+@import page-blog
+// @import page-cart
+// @import page-team
+// @import page-user
+
+
+.loading-container
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #313131
+    z-index: 9999999
+    svg
+        padding: 30px
+        max-width: 400px
+        max-height: 90%
+        opacity: 0
+        overflow: unset
+        *
+            fill-opacity: 0
+            stroke: #fff
+            stroke-width: 2px
+
+.subpage
+    &-banner
+        position: relative
+        // min-height: 80vh
+        .curve
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 100%
+            z-index: 8
+            svg
+                position: absolute
+                bottom: 0
+                left: 0
+                width: 100%
+                height: size-pc(140,rem)
+                @media screen and ( max-width: 767.8px )
+                    min-width: size-pc(800,rem)
+                    height: size-pc(100,rem)
+
+
+        .content
+            padding: size-pc(300,rem) 0 size-pc(230,rem)
+            position: relative
+            z-index: 3
+            .sub-title
+                color: #fff
+                font-family: $font-body
+                font-weight: 600
+                text-transform: uppercase
+                font-size: size-pc(18,rem)
+                margin-bottom: size-pc(40,rem)
+                a
+                    color: #fff
+                span
+                    margin: 0 20px
+                    &.page-current-title
+                        margin: 0
+                        color: $color-2
+            h1
+                font-size: size-pc(150,rem)
+                color: #fff
+                font-weight: 600
+        &-img
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            z-index: 1
+            &::after
+                opacity: 0.7
+                background: #316b7f
+                mix-blend-mode: multiply
+                width: 100%
+                height: 100%
+                position: absolute
+                top: 0
+                left: 0
+                z-index: 2
+                content: ''
+            img
+                position: absolute
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                object-fit: cover
+                z-index: 1
+.banner-blog-detail
+    @include thumb-img(25%,cover)
+    padding-bottom: unset
+    height: 50vw
+    max-height: 500px
+    &::after
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-image: linear-gradient(to top, #eee, transparent)
+        content: ''
+        z-index: 2
+    .content
+        padding: 20px
+        position: absolute
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        max-width: 1440px
+        left: 50%
+        top: 50%
+        transform: translate(-50%,-50%)
+        z-index: 3
+        h1
+            font-size: size-pc(50,rem)
+            text-shadow: -1px -1px 0 #fff, 0   -1px 0 #fff, 1px -1px 0 #fff, 1px  0   0 #fff, 1px  1px 0 #fff, 0    1px 0 #fff, -1px  1px 0 #fff, -1px  0   0 #fff
+            // text-shadow: 0px 0px 0px rgba(#fff,1)
+            filter: drop-shadow(-5px 5px 5px rgba(#000,15%))
+        .date-blog
+            font-size: size-pc(22,rem)
+.title-page
+    padding: size-pc(50,rem) 0
+    text-align: center
+    background-color: #eee
+    box-shadow: inset 0 6px 15px -6px #0003, 0 6px 15px -6px #0003
+    h1
+        font-size: size-pc(50,rem)
+
+    p
+        font-size: size-pc(22,rem)
+    img
+        width: 100%
+        margin-bottom: 30px
+
+
+.product__block
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -5px
+    margin-top: 20px
+    margin-bottom: 20px
+    .product__item
+        // flex: 1
+        width: fit-content
+        display: flex
+        align-items: center
+        border: 1px solid $color-text
+        padding: 10px
+        margin: 0 5px
+        border-radius: 10px
+        font-size: 14px
+        .icon
+            svg,img
+                width: 40px
+                height: 40px
+                object-fit: contain
+                margin-right: 5px
+                @media screen and ( max-width: 575.82px )
+                    width: 30px
+                    height: 30px
+
+.btn-group-product
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -5px
+    .single-product-adc-button
+        padding-left: 0
+        flex: 1
+        margin: 0 5px
+        @media screen and ( max-width: 575.82px )
+            flex: 0 0 100%
+    .sp-adc-btn
+        margin-bottom: 15px
+        &._buy
+            background-color: $color-text
+            .sp-adc-btn-icon
+                &::before
+                    content: '\f53c'
+
+.stagger-fade-rotate-words
+
+    transform: rotateX(-90deg)
+    transition: all 1s ease
+    transform-origin: top
+    &.is-inview
+        transform: rotateX(0deg)
+
+.is-inview
+    .stagger-fade-rotate-words
+        transform: rotateX(0deg)
+.text-animation
+    perspective: 40vw
+    font-size: size-pc(260,rem)
+    font-weight: bold
+    line-height: 1
+    letter-spacing: size-pc(28,rem)
+    @media screen and ( max-width: 991.82px )
+        font-size: size-pc(180,rem)
+    @media screen and ( max-width: 767.82px )
+        font-size: size-pc(130,rem)
+    @media screen and ( max-width: 575.82px )
+        font-size: size-pc(70,rem)
+//     .stagger-fade-rotate-words
+//         &:nth-child(2)
+//             transform: rotateX(-70deg)
+//             &.is-inview
+//                 transform: rotateX(0deg)
+
+.page-section
+    padding-top: 10rem
+.thumb-img-3
+    position: relative
+    padding-bottom: 55%
+    img
+        transition: all .3s ease
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        -o-object-fit: cover
+        object-fit: cover
+        padding: 4%
+    &:after
+        background-image: url('thumb-img.png')
+        background-size: 100% 100%
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        content: ''
+        opacity: 1
+.item-icon img
+    width: 80px
+    height: 80px
+    object-fit: contain
+    margin-bottom: 25px
+    filter: invert(1)
+.content-page
+    padding-top: 2rem
+.accordion-item
+    border: 0 !important
+    background: none !important
+    .accordion-header
+        border-bottom: 1px solid #fff
+    .accordion-button
+        color: #D9D9D9
+        background: none !important
+        box-shadow: none !important
+        &:not(.collapsed),&:hover
+            color: #fff
+        &:after
+            filter: grayscale(1) brightness(10)
+    .accordion-body
+        color: #fff
+.sub-box
+    justify-content: center
+    align-items: center
+    // filter: brightness(4) invert(1)
+    gap: 20px
+    color: #ffffff97
+    & > div
+        gap: 5px
+        align-items: center
+    img, svg
+        width: 22px
+        height: 22px
+        object-fit: contain
+        background-color: #fff
+        border-radius: 4px
+.content-page
+    color: #fff
+    .news-item
+        margin-bottom: 40px
+        color: #fff
+        .thumb-img
+            @include thumb-img(50%,cover)
+            overflow: hidden
+            img
+                transition: all .5s ease
+                &:hover
+                    transform: scale(1.05)
+            .link
+                position: absolute
+                width: size-pc(70,rem)
+                height: size-pc(70,rem)
+                color: #fff
+                display: flex
+                align-items: center
+                justify-content: center
+                z-index: 3
+                background-color: $color-2
+                right: 20px
+                bottom: 20px
+                &:hover
+                    background-color: #fff
+                    color: $color-text
+        .sub-box
+            font-size: 0.9rem
+            justify-content: left
+            margin-bottom: 10px
+            margin-top: 20px
+            img, svg
+                width: 18px
+                height: 18px
+.product-page
+    .news-item
+        margin-bottom: size-pc(70,rem)
+        @media screen and ( max-width: 767.8px )
+            margin-bottom: size-pc(40,rem)
+        .thumb-img
+            @include thumb-img(62%,cover)
+            overflow: hidden
+            img
+                transition: all .5s ease
+                &:hover
+                    transform: scale(1.05)
+            .link
+                position: absolute
+                width: size-pc(70,rem)
+                height: size-pc(70,rem)
+                color: #fff
+                display: flex
+                align-items: center
+                justify-content: center
+                z-index: 3
+                background-color: $color-2
+                right: 20px
+                bottom: 20px
+                &:hover
+                    background-color: #fff
+                    color: $color-text
+        .news-content
+            display: flex
+            color: #fff
+            margin: size-pc(30,rem) 0
+            @media screen and ( max-width: 767.8px )
+                flex-direction: column
+            .title
+                flex: 0 0 50%
+                margin-bottom: size-pc(30,rem)
+                @media screen and ( min-width: 768px )
+                    padding-right: 20px
+
+                a
+                    color: #fff
+                    &:hover
+                        color: $color-2
+                h3
+                    color: #fff
+            .p-content
+                .price
+                    white-space: nowrap
+                    color: #fff
+                    font-size: 1.5rem
+                    font-weight: bold
+                   
+                    span
+                       font-size: 1.1rem
+.detail-price
+    margin-bottom: 20px
+    font-size: 1.75rem
+    color: $color-2
+    font-weight: bold
+    del
+        font-size: 1.25rem
+        opacity: 0.5
+        margin-left: 5px
+.swiper-button-next, .swiper-button-prev
+    color: #fff
+.mySwiperThumb
+    margin-top: 15px
+    .swiper-button-next, .swiper-button-prev
+        &:after
+            font-size: 28px
+.img-wrap
+    position: relative
+    overflow: hidden
+    padding-top: 70%
+    height: 0
+    background-color: #3F3A37
+    img
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        object-fit: contain
+.img-wrap-cart
+    width: 90px
+    margin-right: 8px
+.table-cart
+    width: 100%
+    th, td
+        padding: 15px
+        border-bottom: 1px solid #fff
+    thead
+        th, td
+            background: rgb(0 0 0 / 10%)
+    tbody
+        th, td
+            border-color: #8e8e8e
+.mb-base
+    margin-bottom: 30px
+.pb-base
+    padding-bottom: 30px
+.big-font
+    font-weight: bold
+    font-size: 1.25rem
+.gap-base
+    gap: 20px
+.hr-white
+    width: 100%
+    background-color: #fff
+    border-color: #fff
+    opacity: 1
+
+.crime-section
+    background-color: $color-bg-3
+    padding: size-pc(120,rem) 0
+    position: relative
+    // z-index: 1
+
+    @media screen and ( max-width: 767.8px )
+        padding: size-pc(90,rem) 0
+   
+    .detail-img-item 
+        .tape-el
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2)
+    .detail-img_nav 
+        .dif_arrow
+            color: $color-text
+    .icon-list 
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 100%
+        @media screen and ( max-width: 767.82px )
+            flex-direction: row
+            gap: 20px
+        @media screen and ( max-width: 575.82px )
+            flex-direction: column
+            
+        .item-icon 
+            margin-bottom: 20px
+            width: size-pc(220,rem)
+            height: size-pc(220,rem)
+            padding: 25px
+            border-radius: 50%
+            background: #f3f1e8
+            box-shadow: 2px 2px 10px rgba(0,0,0,.2)
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            @media screen and ( max-width: 767.82px )
+                width: size-pc(200,rem)
+                height: size-pc(200,rem)
+                margin-bottom: 0px
+            img
+                margin-bottom: 10px
+                filter: unset
+                width: size-pc(90,rem)
+                height: size-pc(90,rem)
+                @media screen and ( max-width: 767.82px )
+                    width: size-pc(80,rem)
+                    height: size-pc(80,rem)
+            h3 
+                font-size: size-pc(24,rem)
+                margin-bottom: 0
+                @media screen and ( max-width: 767.82px )
+                    font-size: size-pc(22,rem)
+            &:last-child
+                width: size-pc(260,rem)
+                height: size-pc(260,rem)
+                background: #0083b7
+                @media screen and ( max-width: 767.82px )
+                    width: size-pc(250,rem)
+                    height: size-pc(250,rem)
+                @media screen and ( max-width: 575.82px )
+                    width: size-pc(250,rem)
+                    height: size-pc(250,rem)
+                h3 
+                    color: #fff
+                img
+                    filter: invert(1)

@@ -1,0 +1,716 @@
+.product
+    &-section 
+        padding: size-pc(100,rem) 0
+        @media screen and ( max-width: 767.82px )
+            padding: size-pc(50,rem) 0 
+        .sps-image
+            @include thumb-img(100%, contain)
+            cursor: zoom-in
+            background-color: #f2f2f2
+        .single-product-slider-thumbs .sps-thumb
+            background-color: #f2f2f2
+    &-top 
+        padding-bottom: size-pc(70,rem)
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        @media screen and ( max-width: 767.82px )
+            flex-direction: column
+        .content
+            h2 
+                font-size: size-pc(70,rem)
+                font-weight: $font-extrabold
+                @media screen and ( max-width: 767.82px )
+                    font-size: size-pc(55,rem)
+                    text-align: center
+            h3 
+                font-size: size-pc(44,rem)
+                @media screen and ( max-width: 767.82px )
+               
+                    text-align: center
+    &-navigation 
+        display: flex
+        margin: 0 -5px
+        .btn-nav 
+            margin: 0 5px
+            font-size: size-pc(50,rem)
+            transition: all .3s ease
+            &.swiper-button-disabled
+                opacity: 0.3
+                cursor: not-allowed
+            &:hover 
+                color: $color-primary
+    &-relate
+        &-navigation 
+            display: flex
+            margin: 0 -5px
+            .btn-nav 
+                margin: 0 5px
+                font-size: size-pc(50,rem)
+                transition: all .3s ease
+                &.swiper-button-disabled
+                    opacity: 0.3
+                    cursor: not-allowed
+                &:hover 
+                    color: $color-primary
+
+    &-item 
+    
+    &-img 
+        display: block
+        @include thumb-img(120%,contain)
+        img 
+            transition: all .3s ease
+            background-color: #fff
+            &:nth-of-type(1)
+                opacity: 1
+            &:nth-of-type(2)
+                opacity: 0
+        &:hover 
+            img 
+                // &:nth-of-type(1)
+                //     opacity: 0
+                &:nth-of-type(2)
+                    opacity: 1
+                
+    &-content 
+        margin-top: size-pc(40,rem)
+        @media screen and ( max-width: 767.82px )
+            text-align: center
+        .btn-site
+            margin-top: size-pc(15,rem)
+            @media screen and ( max-width: 767.82px )
+                margin-left: auto 
+                margin-right: auto
+    &-cate 
+        font-size: size-pc(18,rem)
+        font-weight: $font-regular
+        display: block
+        margin-bottom: size-pc(10,rem)
+    &-title 
+        
+        h3 
+            font-size: size-pc(26.5,rem)
+            font-weight: $font-bold
+            text-transform: uppercase
+            margin-bottom: size-pc(15,rem)
+            transition: all .3s ease
+            @media screen and ( max-width: 575.82px )
+                font-size: size-pc(24,rem)
+        &:hover 
+            h3 
+                color: $color-primary
+    &-price 
+        color: $color-primary
+        font-weight: $font-semibold
+        font-size: size-pc(27,rem)
+        @media screen and ( max-width: 575.82px )
+            font-size: size-pc(25,rem)
+        
+
+    &-list 
+        padding: size-pc(50,rem) 0 
+        > .container
+            > .row 
+                margin: 0 size-pc(-50,rem)
+                > *
+                    padding-left: size-pc(50,rem)
+                    padding-right: size-pc(50,rem)
+        &-container
+            .row 
+                margin: 0 size-pc(-50,rem)
+                > *
+                    padding-left: size-pc(50,rem)
+                    padding-right: size-pc(50,rem)
+
+.detail
+    &-banner
+        min-height: 100vh
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: size-pc(130,rem) 0
+        .bg
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            img 
+                position: absolute
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                object-fit: cover
+                z-index: 1
+            &::before
+                position: absolute
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                content: ''
+                background: linear-gradient(to top, $color-primary, transparent)
+                z-index: 2
+        .btn-group
+            z-index: 2
+            position: relative
+            margin: auto
+            margin-top: size-pc(40,rem)
+            display: flex
+            width: fit-content
+            .btn 
+                margin: 0 15px
+    &-content 
+        padding: size-pc(40,rem)
+        max-width: size-pc(1100,rem)
+        position: relative
+        z-index: 3
+        color: #fff
+        // text-align: center
+        border: 5px solid $color-2
+        margin: auto
+        background-color: rgba($color-primary,0.7)
+        h1 
+            text-align: center
+            color: $color-title
+            line-height: 1.3
+            margin-bottom: 30px
+            font-size: size-pc(60,rem)
+            // width: fit-content
+            // letter-spacing: size-pc(4,rem)
+            @media screen and ( max-width: 767.82px )
+                font-size: size-pc(48,rem)
+            @media screen and ( max-width: 575.82px )
+                font-size: size-pc(40,rem)
+        p 
+            font-size: size-pc(28,rem)
+            margin-bottom: 0
+            color: #fff
+        ul 
+            display: flex
+            flex-wrap: wrap
+            margin: 0 -15px
+            li 
+                font-size: size-pc(28,rem)
+                color: #fff
+                flex: 0 0 50%
+                width: 50%
+                max-width: 50%
+                padding: 0 15px
+                margin-bottom: 15px
+
+.about-dark-section
+    background-color: $color-bg-1
+    position: relative
+    color: #fff
+    padding: size-pc(130,rem) 0
+    z-index: 0
+    @media screen and ( max-width: 767.82px)
+        padding: size-pc(0,rem) 0 size-pc(100,rem)
+    .content 
+        position: relative
+        z-index: 3
+        
+        .white 
+            color: #fff
+            span
+                color: #fff
+            
+    .bg
+        position: absolute
+        top: 0
+        left: 0
+        bottom: 0
+        width: 50%
+        @media screen and ( max-width: 767.82px )
+            position: relative
+            padding-bottom: 80%
+            width: 100%
+            margin-bottom: size-pc(50,rem)
+        img 
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            object-fit: cover
+            z-index: 1
+        &::after
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            content: ''
+            left: 0
+            z-index: 2
+            background: linear-gradient(180deg, rgba($color-bg-1,1) 2%, rgba($color-bg-1,0.2) 25%, rgba($color-bg-1,0.2) 75%, rgba($color-bg-1,1) 98%)
+            @media screen and ( max-width: 767.82px )
+                background: linear-gradient(180deg, transparent, rgba($color-bg-1,1) 100%)
+        &::before
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            content: ''
+            left: 0
+            z-index: 2
+            background: linear-gradient(to right, transparent, rgba($color-bg-1,1) 100%)
+            @media screen and ( max-width: 767.82px )
+                display: none
+
+
+.menu
+    &-cart
+        &-bottom
+            position: fixed
+            bottom: 0
+            z-index: 1000
+            width: 100%
+            background-color: $color-bg-4
+            .cart-t 
+                @media screen and ( max-width: 767.82px )
+                    margin-bottom: 10px
+                h2 
+                    color: #fff
+                    font-size: size-pc(30 ,rem)
+                    margin-bottom: 0
+                    @media screen and ( max-width: 767.82px )
+                        font-size: size-pc(26 ,rem)
+            .cart-total
+                @media screen and ( max-width: 767.82px )
+                    margin-bottom: 10px
+                p 
+                    color: #fff
+                    font-size: size-pc(26 ,rem)
+                    margin-bottom: 0
+                    @media screen and ( max-width: 767.82px )
+                        font-size: size-pc(24 ,rem)
+
+            .cart-left
+                display: flex
+                align-items: center
+                // flex-wrap: wrap
+                .cart-total
+                    @media screen and ( max-width: 767.82px )
+        &-title 
+            width: 100%
+            background-color: $color-bg-5
+            text-align: center
+            padding: size-pc(5 ,rem) size-pc(20 ,rem)
+            position: relative
+            @media screen and ( max-width: 767.82px )
+                padding: size-pc(10 ,rem) size-pc(10 ,rem)
+            .title_menu
+                display: flex
+                justify-content: center
+                align-items: center
+                position: relative
+                transition: all .5s ease
+                .btn-back-2,.btn-back-3
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 40px
+                    height: 40px
+                    position: absolute
+                    left: 5px
+                    color: #fff
+                    font-size: size-pc(40 ,rem)
+                    &:hover 
+                        background-color: #23181c
+                    
+                &.title-1
+                    z-index: 0
+                    &.close 
+                        transform: translateX(-100%)
+                    
+                &.title-2
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    top: 0
+                    left: 0
+                    transform: translateX(100%)
+                    z-index: 1
+                    &.open
+                        transform: translateX(0%)
+                    &.hide-btn-2
+                        transform: translateX(-100%)
+                &.title-3
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    top: 0
+                    left: 0
+                    transform: translateX(100%)
+                    z-index: 2
+                    &.open
+                        transform: translateX(0%)
+            h2 
+                margin-bottom: 0
+                font-size: size-pc(30 ,rem)
+                color: #fff
+                @media screen and ( max-width: 767.82px )
+                    font-size: size-pc(26 ,rem)
+                    span
+                        display: block
+                .name-location
+                    display: inline-block!important
+            .title-no-wrap
+                white-space: nowrap
+                span 
+                    display: inline-block!important
+                    
+        &-action 
+            padding: size-pc(15 ,rem) size-pc(20 ,rem)
+            display: flex
+            flex-wrap: wrap
+            width: 100%
+            justify-content: center
+            align-items: center
+            background-color: $color-bg-2
+            @media screen and ( max-width: 767.82px )
+                flex-direction: column
+                padding: 20px 10px 20px
+                
+        &-quantity
+            display: flex
+            align-items: center
+            margin: 0 15px
+            @media screen and ( max-width: 767.82px )
+                margin-bottom: 10px
+            input 
+                width: size-pc(110 ,rem)
+                height: size-pc(55 ,rem)
+                border-radius: 10px
+                background-color: #fff
+                margin: 0 10px
+                color: $color-text
+                text-align: center
+                pointer-events: none
+                appearance: textfield
+                -moz-appearance: textfield
+                &::-webkit-outer-spin-button,&::-webkit-inner-spin-button 
+                    -webkit-appearance: none
+                    margin: 0
+                @media screen and ( max-width: 767.82px )
+                    width: size-pc(80 ,rem)
+                    height: size-pc(50 ,rem)
+            .quantity-btn
+                width: size-pc(50 ,rem)
+                height: size-pc(50 ,rem)
+                border-radius: 50%
+                border: 1px solid #fff
+                color: #fff
+                display: flex
+                justify-content: center
+                align-items: center
+                font-size: size-pc(30 ,rem)
+                line-height: size-pc(30 ,rem)
+        &-submit 
+            margin: 0 15px
+            display: flex
+            width: fit-content
+            .btn
+                margin: 0 5px
+            .shopify-product-form
+                display: flex
+            @media screen and ( max-width: 767.82px )
+                width: 100%
+                margin: 0px
+                margin-top: 15px
+                .btn 
+                    width: 100%
+                .shopify-product-form
+                    width: 100%
+        
+    &-product
+        position: relative
+        color: #fff
+        &.open-list 
+            min-height: 200px
+        .btn-start
+            display: flex 
+            align-items: center
+            justify-content: center
+            width: 100%
+            color: #fff
+            text-align: center
+            font-size: size-pc(26 ,rem)
+            padding: size-pc(20 ,rem)
+            letter-spacing: 1px
+            transition: all .5s ease
+            @media screen and ( max-width: 767.82px )
+                font-size: size-pc(24 ,rem)
+            &:hover 
+                letter-spacing: 3px
+            &.hide-b 
+                transform: translateX(-100%)
+            i 
+                margin-left: 10px
+        &-list
+            position: absolute
+            top: 0
+            transform: translateX(100%)
+            left: 0%
+            width: 100%
+            height: 100%
+            overflow: auto
+            transition: all .5s ease
+            &.open 
+                transform: translateX(0%)
+            &.hide-menu-1
+                transform: translateX(-100%)
+            h3 
+                text-align: center
+                font-size: size-pc(24,rem)
+                border-bottom: 1px solid rgba(#fff,0.5)
+                margin-bottom: 0px
+                padding-bottom: 10px
+                padding-top: 10px
+            ul 
+                
+                li 
+                    a 
+                        padding: 10px 35px
+                        color: #d7d7d7
+                        text-align: center
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        width: 100%
+                        &:hover 
+                            background-color: #353535
+                        &::after
+                            content: "\f105"
+                            font-family: "Font Awesome 5 Pro"
+                            position: absolute
+                            right: 20px
+
+    &-game 
+        &-list 
+            position: absolute
+            left: 0
+            top: 0
+            width: 100%
+            height: 100%
+            transform: translateX(100%)
+            overflow: auto
+            transition: all .5s ease
+            &.show-menu-2
+                transform: translateX(0)
+            ul 
+                
+                li 
+                    a 
+                        padding: 10px 35px
+                        color: #d7d7d7
+                        display: flex
+                        text-align: center
+                        align-items: center
+                        justify-content: center
+                        width: 100%
+                        &:hover 
+                            background-color: #353535
+                        &::after
+                            content: "\f105"
+                            font-family: "Font Awesome 5 Pro"
+                            position: absolute
+                            right: 20px
+
+
+.detail-img
+    &_nav 
+        display: flex
+        align-items: center
+        margin-bottom: size-pc(50,rem)
+        .dif_arrow-wrap
+            display: flex
+            align-items: center
+            font-size: size-pc(30,rem)
+            margin-top: 2px
+        .dif_arrow
+            margin-right: size-pc(20,rem)
+            transition: all .3s ease
+            color: #fff
+            &.swiper-button-disabled
+                opacity: 0.4
+        &-bg 
+            width: 100%
+            height: 2px
+            background: rgba($color-2,0.36)
+            position: relative
+            overflow: hidden
+        &-fill
+            padding-right: 10px
+            background-color: $color-2
+            height: 100%
+            width: 0
+    &_p
+        white-space: nowrap
+        font-size: size-pc(24,rem)!important
+        padding-left: size-pc(20,rem)
+        margin-bottom: size-pc(0,rem)
+    &-slide
+        .swiper
+            overflow: unset
+            .swiper-slide 
+                &:nth-of-type(3n + 1)
+                    .tape-el 
+                        .el-1 
+                            top: -0px
+                            left: -30px
+                            transform: rotate(-45deg)
+                            @media screen and ( max-width: 767.82px )
+                                left: -20px
+                        .el-2 
+                            right: -30px
+                            bottom: 0
+                            transform: rotate(-45deg)
+                            @media screen and ( max-width: 767.82px )
+                                right: -20px
+                &:nth-of-type(3n + 2)
+                    .tape-el
+                
+                        .el-1 
+                            bottom: 0px
+                            left: -30px
+                            transform: rotate(45deg)
+                            @media screen and ( max-width: 767.82px )
+                                left: -20px
+                        .el-2 
+                            right: -30px
+                            top: 0
+                            transform: rotate(45deg)
+                            @media screen and ( max-width: 767.82px )
+                                right: -20px
+                &:nth-of-type(3n + 3)
+                    .tape-el
+                        .el-1 
+                            top: 0px
+                            left: -30px
+                            transform: rotate(-45deg)
+                            @media screen and ( max-width: 767.82px )
+                                left: -20px
+                        .el-2 
+                            right: -30px
+                            top: 0
+                            transform: rotate(45deg)
+                            @media screen and ( max-width: 767.82px )
+                                right: -20px
+                    
+    &-item 
+        position: relative
+        padding: size-pc(20,rem)
+        margin: size-pc(100,rem) size-pc(30,rem)
+        margin-bottom: size-pc(100,rem)
+        &::before
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            content: ''
+            background: linear-gradient(-150deg, #edebe2 10% ,#fff)
+            position: absolute
+        .img 
+            @include thumb-img(60%, cover)
+        .tape-el
+            
+            z-index: 1
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            .el-1,.el-2
+                background-image: url(tape.png)
+                width: 120px
+                height: 45px
+                background-repeat: no-repeat
+                background-size: 100% 100%
+                position: absolute
+                z-index: 1
+                @media screen and ( max-width: 767.82px )
+                    width: 70px
+                    height: 30px
+        .shadow
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            box-shadow: unset!important
+            overflow: unset
+            z-index: -1
+            opacity: 0.5
+            > * 
+                position: absolute
+                background-size: contain
+                background-repeat: no-repeat
+                height: 100%
+            &-1
+                background-image: url(sd-w-1.png)
+                width: size-pc(300,rem)
+                max-width: 50%
+                top: 13px
+                left: -18px
+                background-position: top left
+            &-2
+                background-image: url(sd-w-2.png)
+                width: size-pc(400,rem)
+                max-width: 50%
+                top: 3px
+                right: -20px
+                background-position: top left
+            &-3
+                background-image: url(sd-w-3.png)
+                width: size-pc(700,rem)
+                bottom: -16px
+                right: -16px
+                background-position: bottom right
+                max-width: 80%
+            &-4
+                background-image: url(sd-w-4.png)
+                width: size-pc(700,rem)
+                max-width: 80%
+                bottom: 10px
+                left: -15px
+                background-position: bottom right
+        // &.__1
+        //     .tape-el 
+        //         .el-1 
+        //             top: -0px
+        //             left: -30px
+        //             transform: rotate(-45deg)
+        //         .el-2 
+        //             right: -30px
+        //             bottom: 0
+        //             transform: rotate(-45deg)
+        // &.__2
+        //     // transform: rotate(2deg)
+        //     .tape-el
+                
+        //         .el-1 
+        //             bottom: 0px
+        //             left: -30px
+        //             transform: rotate(45deg)
+        //         .el-2 
+        //             right: -30px
+        //             top: 0
+        //             transform: rotate(45deg)
+        // &.__3
+        //     .tape-el
+                
+        //         .el-1 
+        //             top: 0px
+        //             left: -30px
+        //             transform: rotate(-45deg)
+        //         .el-2 
+        //             right: -30px
+        //             top: 0
+        //             transform: rotate(45deg)
+        

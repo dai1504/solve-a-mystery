@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solve a Mystery</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Package -->
+    <link rel="stylesheet" href="assets/packages/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/packages/select2.min.css">
+    <link rel="stylesheet" href="assets/packages/swiper6.1.1/swiper.min.css">
+    <link rel="stylesheet" href="assets/packages/animate.min.css">
+    <link rel="stylesheet" href="assets/packages/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/packages/meanmenu.min.css">
+    <link rel="stylesheet" href="assets/packages/locomotive.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+    <!-- Style -->
+
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <script src="assets/packages/splitting.min.js" async></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="logo-header container">
+
+
+
+            <div class="site-header-logo">
+                <a href="index.html">
+                    <img src="assets/images/logo/logo.png" alt="" class="">
+                </a>
+            </div>
+
+            <div class="site-header-menu">
+                <div class="site-header-link">
+                    <ul>
+                        <li>
+                            <a href="index.html">Start</a>
+
+                        </li>
+                        <li class="has-submenu _column-2">
+                            <a href="#">Mystery Hunts</a>
+                            <ul>
+                                <li><a href="product-list.html">Denmark</a></li>
+                                <li><a href="product-list.html">Sweden</a></li>
+                                <li><a href="product-list.html">Norway</a></li>
+                                <li><a href="product-list.html">United Kingdom</a></li>
+                                <li><a href="product-list.html">Ireland</a></li>
+                                <li><a href="product-list.html">Spain</a></li>
+                                <li><a href="product-list.html">The Netherlands</a></li>
+                                <li><a href="product-list.html">France</a></li>
+                                <li><a href="product-list.html">Italy</a></li>
+                                <li><a href="product-list.html">Austria</a></li>
+                                <li><a href="product-list.html">Germany</a></li>
+                                <li><a href="product-list.html">Hungary</a></li>
+                                <li><a href="product-list.html">United States</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="redeem-voucher.html">Redeem Voucher</a></li>
+                        <li><a href="team-event.html">Team Event</a></li>
+                        <li class="has-submenu">
+                            <a href="#">More</a>
+                            <ul>
+                                <li><a href="product-details.html">Gift Card</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+            <div class="logo-header-menu">
+                <ul>
+                    <li class="language-menu">
+                        <a href="#">EN</a>
+                        <ul>
+                            <li><a href="#">GER</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="cart-btn">
+                    <i class="fal fa-shopping-cart"></i>
+                    <span>1</span>
+                </div>
+                <div class="site-header-ham">
+                    <a href="#" class="ham-btn">
+                        <i class="fas fa-bars"></i>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="menu-mobile-container">
+        <button class="mobile__close-btn" id="mobile__close-btn">
+            <span><i class="fal fa-times"></i></span>
+        </button>
+        <div class="logo mb-40">
+            <a href="index.html">
+                <img src="assets/images/logo/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="mobile-menu">
+
+        </div>
+    </div>
+
+    <div class="cart-container">
+        <div class="cart-title">
+            <h3>Cart</h3>
+            <div class="cart-close" title="Close"><i class="fas fa-times"></i></div>
+        </div>
+
+        <div class="cart-list" data-lenis-prevent>
+            <ul>
+                <li>
+                    <div class="cart-item">
+                        <a href="#" class="cart-item-img">
+                            <img class="lazyload" data-src="assets/images/home/section-4/2.jpg" alt="">
+                        </a>
+                        <div class="cart-item-info">
+                            <!-- <div class="cart-item-cate">
+                                <span>Denmark</span>
+                            </div> -->
+                            <a href="#" class="cart-item-title">
+                                København | Drabet ved Amalienborg slot
+                            </a>
+                            <div class="cart-item-variant">
+                                <span>Dansk Version</span>
+                            </div>
+                            <div class="cart-item-price">
+                                <span>$50/ person</span>
+                            </div>
+                        </div>
+                        <div class="cart-remove">
+                            <a href="#">
+                                <i class="fal fa-trash-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="cart-item">
+                        <a href="#" class="cart-item-img">
+                            <img class="lazyload" data-src="assets/images/home/section-4/2.jpg" alt="">
+                        </a>
+                        <div class="cart-item-info">
+                            <!-- <div class="cart-item-cate">
+                                <span>Denmark</span>
+                            </div> -->
+                            <a href="#" class="cart-item-title">
+                                København | Drabet ved Amalienborg slot
+                            </a>
+                            <div class="cart-item-variant">
+                                <span>Dansk Version</span>
+                            </div>
+                            <div class="cart-item-price">
+                                <span>$50/ person</span>
+                            </div>
+                        </div>
+                        <div class="cart-remove">
+                            <a href="#">
+                                <i class="fal fa-trash-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="cart-item">
+                        <a href="#" class="cart-item-img">
+                            <img class="lazyload" data-src="assets/images/home/section-4/2.jpg" alt="">
+                        </a>
+                        <div class="cart-item-info">
+                            <!-- <div class="cart-item-cate">
+                                <span>Denmark</span>
+                            </div> -->
+                            <a href="#" class="cart-item-title">
+                                København | Drabet ved Amalienborg slot
+                            </a>
+                            <div class="cart-item-variant">
+                                <span>Dansk Version</span>
+                            </div>
+                            <div class="cart-item-price">
+                                <span>$50/ person</span>
+                            </div>
+                        </div>
+                        <div class="cart-remove">
+                            <a href="#">
+                                <i class="fal fa-trash-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="cart-item">
+                        <a href="#" class="cart-item-img">
+                            <img class="lazyload" data-src="assets/images/home/section-4/2.jpg" alt="">
+                        </a>
+                        <div class="cart-item-info">
+                            <!-- <div class="cart-item-cate">
+                                <span>Denmark</span>
+                            </div> -->
+                            <a href="#" class="cart-item-title">
+                                København | Drabet ved Amalienborg slot
+                            </a>
+                            <div class="cart-item-variant">
+                                <span>Dansk Version</span>
+                            </div>
+                            <div class="cart-item-price">
+                                <span>$50/ person</span>
+                            </div>
+                        </div>
+                        <div class="cart-remove">
+                            <a href="#">
+                                <i class="fal fa-trash-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="cart-button">
+            <div class="text">
+                <h4>Subtotal:</h4>
+                <span>$1500</span>
+            </div>
+            <div class="btn-group">
+                <button type="submit">Checkout</button>
+                <a href="cart.html" class="btn-site btn-white">View Cart</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="body-overlay"></div>
+
+
+
+    <main id="scrollable">
+
+
+        <section class="page-section home-2-section">
+            <div class="el-bg el-b-1">
+                <img data-scroll data-scroll-speed="-0.02" src="assets/images/home/section-2/b-1.png" alt="">
+            </div>
+            <div class="el-bg el-b-2">
+                <img data-scroll data-scroll-speed="-0.02" src="assets/images/home/section-2/b-2.png" alt="">
+            </div>
+            <div class="el-bg el-1">
+                <img data-scroll data-scroll-speed="0.05" src="assets/images/home/section-2/el-1.png" alt="">
+            </div>
+            <div class="el-bg el-2">
+                <img data-scroll data-scroll-speed="0.05" src="assets/images/home/section-2/el-2.png" alt="">
+            </div>
+            <div class="el-bg el-4">
+                <img data-scroll data-scroll-speed="0.05" src="assets/images/home/section-2/el-4.png" alt="">
+            </div>
+            <div class="el-bg el-5">
+                <img data-scroll data-scroll-speed="0.05" src="assets/images/home/section-2/sam.png" alt="">
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="content text-center">
+                            <h2 class="wow animate__fadeIn content__title" data-splitting data-effect5
+                                data-wow-duration="1.5s">
+                                The dog walker's killer
+                            </h2>
+
+                        </div>
+                        <div class="content-page">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="news-item wow animate__fadeIn" data-wow-duration="1.5s">
+                                        <div class="thumb-img">
+                                            <a href="#">
+                                                <img class="lazyload" data-src="assets/images/home/section-3/1.jpg" alt="">
+                                            </a>
+                                            <a href="#" class="link">
+                                                <i class="fal fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                        <div class="news-content">
+                                            <div class="">
+                                                <div class="d-flex sub-box">
+                                                    <div class="d-flex">
+                                                        <img src="assets/images/icon-3.webp"> SOLVE A MYSTERY
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" class="blog-icon-fill" style="fill-rule: evenodd;"><path d="M6.45342775,7.90809427 C6.47137986,7.67117444 6.68963973,5.87674187 8.37808299,4.90340332 C8.41115266,5.58764834 8.60768103,6.30696092 8.92231539,6.73461406 C8.84483786,6.6302667 9.46560296,3.27490017 11.0397196,2.66934333 C11.3288431,2.55815351 12.4683297,2.18523997 13.0900396,2.03128484 C13.7117496,1.87647441 14.1917323,2.33662919 13.9243403,2.52821779 C13.1845244,3.0602183 12.4730539,4.28587219 12.2406213,4.77168616 C12.0412584,5.18822031 11.627415,6.07773884 11.1776674,7.44451827 C10.9017718,8.28186312 9.66213133,9.06617897 8.89396996,9.20901512 C9.40607754,9.70765868 10.5597369,9.42626292 10.5474538,9.45790925 C9.40607754,12.5943174 8.43571871,13.3401444 8.08140074,13.6309486 C7.9169972,13.7669423 7.72613791,13.8926723 7.57779679,14.0320872 C7.49748471,14.1056436 7.47386352,14.1980166 7.43984899,14.2792707 C7.27355575,14.6735669 6.94852806,15.5810469 6.46571077,17 L6.15580065,16.7605142 C6.3853987,15.1525384 6.44397927,14.5478369 6.48649743,14.313483 C6.51106347,14.1800552 6.4505932,14.1056436 6.35610841,14.0380744 C5.91108504,13.721611 5.59361613,13.3521187 5.36401808,12.9458482 C5.16371032,12.5934621 5.05977705,12.2119955 5.01820374,11.816844 C4.97096134,11.3643869 5.0115898,10.889692 5.18827637,10.4201288 C5.29315449,10.1430096 5.42637805,9.82911217 5.68432153,9.36125964 C5.92147836,10.2165659 6.64806642,10.3226239 6.65562521,10.3209133 C6.58759615,10.1122186 6.33721145,9.42711822 6.45342775,7.90809427"></path></svg>
+                                                        May 22, 2022
+                                                    </div>
+                                                </div>
+                                                <h3 class="content__title" data-splitting data-effect10><a class="color-w"
+                                                        href="blog-details.html">The dog walker's killer</a></h3>
+                                                <a class="cate content__title color-w" data-splitting data-effect10 href="blog-details.html">Have you heard the story of the dog walking killer from Holland? Read along here to get the story of one of Holland's serial killers</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="news-item wow animate__fadeIn" data-wow-duration="1.5s">
+                                        <div class="thumb-img">
+                                            <a href="#">
+                                                <img class="lazyload" data-src="assets/images/home/section-3/1.jpg" alt="">
+                                            </a>
+                                            <a href="#" class="link">
+                                                <i class="fal fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                        <div class="news-content">
+                                            <div class="">
+                                                <div class="d-flex sub-box">
+                                                    <div class="d-flex">
+                                                        <img src="assets/images/icon-3.webp"> SOLVE A MYSTERY
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" class="blog-icon-fill" style="fill-rule: evenodd;"><path d="M6.45342775,7.90809427 C6.47137986,7.67117444 6.68963973,5.87674187 8.37808299,4.90340332 C8.41115266,5.58764834 8.60768103,6.30696092 8.92231539,6.73461406 C8.84483786,6.6302667 9.46560296,3.27490017 11.0397196,2.66934333 C11.3288431,2.55815351 12.4683297,2.18523997 13.0900396,2.03128484 C13.7117496,1.87647441 14.1917323,2.33662919 13.9243403,2.52821779 C13.1845244,3.0602183 12.4730539,4.28587219 12.2406213,4.77168616 C12.0412584,5.18822031 11.627415,6.07773884 11.1776674,7.44451827 C10.9017718,8.28186312 9.66213133,9.06617897 8.89396996,9.20901512 C9.40607754,9.70765868 10.5597369,9.42626292 10.5474538,9.45790925 C9.40607754,12.5943174 8.43571871,13.3401444 8.08140074,13.6309486 C7.9169972,13.7669423 7.72613791,13.8926723 7.57779679,14.0320872 C7.49748471,14.1056436 7.47386352,14.1980166 7.43984899,14.2792707 C7.27355575,14.6735669 6.94852806,15.5810469 6.46571077,17 L6.15580065,16.7605142 C6.3853987,15.1525384 6.44397927,14.5478369 6.48649743,14.313483 C6.51106347,14.1800552 6.4505932,14.1056436 6.35610841,14.0380744 C5.91108504,13.721611 5.59361613,13.3521187 5.36401808,12.9458482 C5.16371032,12.5934621 5.05977705,12.2119955 5.01820374,11.816844 C4.97096134,11.3643869 5.0115898,10.889692 5.18827637,10.4201288 C5.29315449,10.1430096 5.42637805,9.82911217 5.68432153,9.36125964 C5.92147836,10.2165659 6.64806642,10.3226239 6.65562521,10.3209133 C6.58759615,10.1122186 6.33721145,9.42711822 6.45342775,7.90809427"></path></svg>
+                                                        May 22, 2022
+                                                    </div>
+                                                </div>
+                                                <h3 class="content__title" data-splitting data-effect10><a class="color-w"
+                                                        href="blog-details.html">The dog walker's killer</a></h3>
+                                                <a class="cate content__title color-w" data-splitting data-effect10 href="blog-details.html">Have you heard the story of the dog walking killer from Holland? Read along here to get the story of one of Holland's serial killers</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="news-item wow animate__fadeIn" data-wow-duration="1.5s">
+                                        <div class="thumb-img">
+                                            <a href="#">
+                                                <img class="lazyload" data-src="assets/images/home/section-3/1.jpg" alt="">
+                                            </a>
+                                            <a href="#" class="link">
+                                                <i class="fal fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                        <div class="news-content">
+                                            <div class="">
+                                                <div class="d-flex sub-box">
+                                                    <div class="d-flex">
+                                                        <img src="assets/images/icon-3.webp"> SOLVE A MYSTERY
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" class="blog-icon-fill" style="fill-rule: evenodd;"><path d="M6.45342775,7.90809427 C6.47137986,7.67117444 6.68963973,5.87674187 8.37808299,4.90340332 C8.41115266,5.58764834 8.60768103,6.30696092 8.92231539,6.73461406 C8.84483786,6.6302667 9.46560296,3.27490017 11.0397196,2.66934333 C11.3288431,2.55815351 12.4683297,2.18523997 13.0900396,2.03128484 C13.7117496,1.87647441 14.1917323,2.33662919 13.9243403,2.52821779 C13.1845244,3.0602183 12.4730539,4.28587219 12.2406213,4.77168616 C12.0412584,5.18822031 11.627415,6.07773884 11.1776674,7.44451827 C10.9017718,8.28186312 9.66213133,9.06617897 8.89396996,9.20901512 C9.40607754,9.70765868 10.5597369,9.42626292 10.5474538,9.45790925 C9.40607754,12.5943174 8.43571871,13.3401444 8.08140074,13.6309486 C7.9169972,13.7669423 7.72613791,13.8926723 7.57779679,14.0320872 C7.49748471,14.1056436 7.47386352,14.1980166 7.43984899,14.2792707 C7.27355575,14.6735669 6.94852806,15.5810469 6.46571077,17 L6.15580065,16.7605142 C6.3853987,15.1525384 6.44397927,14.5478369 6.48649743,14.313483 C6.51106347,14.1800552 6.4505932,14.1056436 6.35610841,14.0380744 C5.91108504,13.721611 5.59361613,13.3521187 5.36401808,12.9458482 C5.16371032,12.5934621 5.05977705,12.2119955 5.01820374,11.816844 C4.97096134,11.3643869 5.0115898,10.889692 5.18827637,10.4201288 C5.29315449,10.1430096 5.42637805,9.82911217 5.68432153,9.36125964 C5.92147836,10.2165659 6.64806642,10.3226239 6.65562521,10.3209133 C6.58759615,10.1122186 6.33721145,9.42711822 6.45342775,7.90809427"></path></svg>
+                                                        May 22, 2022
+                                                    </div>
+                                                </div>
+                                                <h3 class="content__title" data-splitting data-effect10><a class="color-w"
+                                                        href="blog-details.html">The dog walker's killer</a></h3>
+                                                <a class="cate content__title color-w" data-splitting data-effect10 href="blog-details.html">Have you heard the story of the dog walking killer from Holland? Read along here to get the story of one of Holland's serial killers</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="news-item wow animate__fadeIn" data-wow-duration="1.5s">
+                                        <div class="thumb-img">
+                                            <a href="#">
+                                                <img class="lazyload" data-src="assets/images/home/section-3/1.jpg" alt="">
+                                            </a>
+                                            <a href="#" class="link">
+                                                <i class="fal fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                        <div class="news-content">
+                                            <div class="">
+                                                <div class="d-flex sub-box">
+                                                    <div class="d-flex">
+                                                        <img src="assets/images/icon-3.webp"> SOLVE A MYSTERY
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" class="blog-icon-fill" style="fill-rule: evenodd;"><path d="M6.45342775,7.90809427 C6.47137986,7.67117444 6.68963973,5.87674187 8.37808299,4.90340332 C8.41115266,5.58764834 8.60768103,6.30696092 8.92231539,6.73461406 C8.84483786,6.6302667 9.46560296,3.27490017 11.0397196,2.66934333 C11.3288431,2.55815351 12.4683297,2.18523997 13.0900396,2.03128484 C13.7117496,1.87647441 14.1917323,2.33662919 13.9243403,2.52821779 C13.1845244,3.0602183 12.4730539,4.28587219 12.2406213,4.77168616 C12.0412584,5.18822031 11.627415,6.07773884 11.1776674,7.44451827 C10.9017718,8.28186312 9.66213133,9.06617897 8.89396996,9.20901512 C9.40607754,9.70765868 10.5597369,9.42626292 10.5474538,9.45790925 C9.40607754,12.5943174 8.43571871,13.3401444 8.08140074,13.6309486 C7.9169972,13.7669423 7.72613791,13.8926723 7.57779679,14.0320872 C7.49748471,14.1056436 7.47386352,14.1980166 7.43984899,14.2792707 C7.27355575,14.6735669 6.94852806,15.5810469 6.46571077,17 L6.15580065,16.7605142 C6.3853987,15.1525384 6.44397927,14.5478369 6.48649743,14.313483 C6.51106347,14.1800552 6.4505932,14.1056436 6.35610841,14.0380744 C5.91108504,13.721611 5.59361613,13.3521187 5.36401808,12.9458482 C5.16371032,12.5934621 5.05977705,12.2119955 5.01820374,11.816844 C4.97096134,11.3643869 5.0115898,10.889692 5.18827637,10.4201288 C5.29315449,10.1430096 5.42637805,9.82911217 5.68432153,9.36125964 C5.92147836,10.2165659 6.64806642,10.3226239 6.65562521,10.3209133 C6.58759615,10.1122186 6.33721145,9.42711822 6.45342775,7.90809427"></path></svg>
+                                                        May 22, 2022
+                                                    </div>
+                                                </div>
+                                                <h3 class="content__title" data-splitting data-effect10><a class="color-w"
+                                                        href="blog-details.html">The dog walker's killer</a></h3>
+                                                <a class="cate content__title color-w" data-splitting data-effect10 href="blog-details.html">Have you heard the story of the dog walking killer from Holland? Read along here to get the story of one of Holland's serial killers</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="news-item wow animate__fadeIn" data-wow-duration="1.5s">
+                                        <div class="thumb-img">
+                                            <a href="#">
+                                                <img class="lazyload" data-src="assets/images/home/section-3/1.jpg" alt="">
+                                            </a>
+                                            <a href="#" class="link">
+                                                <i class="fal fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                        <div class="news-content">
+                                            <div class="">
+                                                <div class="d-flex sub-box">
+                                                    <div class="d-flex">
+                                                        <img src="assets/images/icon-3.webp"> SOLVE A MYSTERY
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" class="blog-icon-fill" style="fill-rule: evenodd;"><path d="M6.45342775,7.90809427 C6.47137986,7.67117444 6.68963973,5.87674187 8.37808299,4.90340332 C8.41115266,5.58764834 8.60768103,6.30696092 8.92231539,6.73461406 C8.84483786,6.6302667 9.46560296,3.27490017 11.0397196,2.66934333 C11.3288431,2.55815351 12.4683297,2.18523997 13.0900396,2.03128484 C13.7117496,1.87647441 14.1917323,2.33662919 13.9243403,2.52821779 C13.1845244,3.0602183 12.4730539,4.28587219 12.2406213,4.77168616 C12.0412584,5.18822031 11.627415,6.07773884 11.1776674,7.44451827 C10.9017718,8.28186312 9.66213133,9.06617897 8.89396996,9.20901512 C9.40607754,9.70765868 10.5597369,9.42626292 10.5474538,9.45790925 C9.40607754,12.5943174 8.43571871,13.3401444 8.08140074,13.6309486 C7.9169972,13.7669423 7.72613791,13.8926723 7.57779679,14.0320872 C7.49748471,14.1056436 7.47386352,14.1980166 7.43984899,14.2792707 C7.27355575,14.6735669 6.94852806,15.5810469 6.46571077,17 L6.15580065,16.7605142 C6.3853987,15.1525384 6.44397927,14.5478369 6.48649743,14.313483 C6.51106347,14.1800552 6.4505932,14.1056436 6.35610841,14.0380744 C5.91108504,13.721611 5.59361613,13.3521187 5.36401808,12.9458482 C5.16371032,12.5934621 5.05977705,12.2119955 5.01820374,11.816844 C4.97096134,11.3643869 5.0115898,10.889692 5.18827637,10.4201288 C5.29315449,10.1430096 5.42637805,9.82911217 5.68432153,9.36125964 C5.92147836,10.2165659 6.64806642,10.3226239 6.65562521,10.3209133 C6.58759615,10.1122186 6.33721145,9.42711822 6.45342775,7.90809427"></path></svg>
+                                                        May 22, 2022
+                                                    </div>
+                                                </div>
+                                                <h3 class="content__title" data-splitting data-effect10><a class="color-w"
+                                                        href="blog-details.html">The dog walker's killer</a></h3>
+                                                <a class="cate content__title color-w" data-splitting data-effect10 href="blog-details.html">Have you heard the story of the dog walking killer from Holland? Read along here to get the story of one of Holland's serial killers</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="news-item wow animate__fadeIn" data-wow-duration="1.5s">
+                                        <div class="thumb-img">
+                                            <a href="#">
+                                                <img class="lazyload" data-src="assets/images/home/section-3/1.jpg" alt="">
+                                            </a>
+                                            <a href="#" class="link">
+                                                <i class="fal fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                        <div class="news-content">
+                                            <div class="">
+                                                <div class="d-flex sub-box">
+                                                    <div class="d-flex">
+                                                        <img src="assets/images/icon-3.webp"> SOLVE A MYSTERY
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" class="blog-icon-fill" style="fill-rule: evenodd;"><path d="M6.45342775,7.90809427 C6.47137986,7.67117444 6.68963973,5.87674187 8.37808299,4.90340332 C8.41115266,5.58764834 8.60768103,6.30696092 8.92231539,6.73461406 C8.84483786,6.6302667 9.46560296,3.27490017 11.0397196,2.66934333 C11.3288431,2.55815351 12.4683297,2.18523997 13.0900396,2.03128484 C13.7117496,1.87647441 14.1917323,2.33662919 13.9243403,2.52821779 C13.1845244,3.0602183 12.4730539,4.28587219 12.2406213,4.77168616 C12.0412584,5.18822031 11.627415,6.07773884 11.1776674,7.44451827 C10.9017718,8.28186312 9.66213133,9.06617897 8.89396996,9.20901512 C9.40607754,9.70765868 10.5597369,9.42626292 10.5474538,9.45790925 C9.40607754,12.5943174 8.43571871,13.3401444 8.08140074,13.6309486 C7.9169972,13.7669423 7.72613791,13.8926723 7.57779679,14.0320872 C7.49748471,14.1056436 7.47386352,14.1980166 7.43984899,14.2792707 C7.27355575,14.6735669 6.94852806,15.5810469 6.46571077,17 L6.15580065,16.7605142 C6.3853987,15.1525384 6.44397927,14.5478369 6.48649743,14.313483 C6.51106347,14.1800552 6.4505932,14.1056436 6.35610841,14.0380744 C5.91108504,13.721611 5.59361613,13.3521187 5.36401808,12.9458482 C5.16371032,12.5934621 5.05977705,12.2119955 5.01820374,11.816844 C4.97096134,11.3643869 5.0115898,10.889692 5.18827637,10.4201288 C5.29315449,10.1430096 5.42637805,9.82911217 5.68432153,9.36125964 C5.92147836,10.2165659 6.64806642,10.3226239 6.65562521,10.3209133 C6.58759615,10.1122186 6.33721145,9.42711822 6.45342775,7.90809427"></path></svg>
+                                                        May 22, 2022
+                                                    </div>
+                                                </div>
+                                                <h3 class="content__title" data-splitting data-effect10><a class="color-w"
+                                                        href="blog-details.html">The dog walker's killer</a></h3>
+                                                <a class="cate content__title color-w" data-splitting data-effect10 href="blog-details.html">Have you heard the story of the dog walking killer from Holland? Read along here to get the story of one of Holland's serial killers</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="blog-navigation">
+                            <ul>
+                                <li><a class="active" href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <span class="awd-scrollbar"></span>
+
+    <footer class="site-footer">
+        <!-- <div class="dot-top-1"></div>
+        <div class="dot-top-2"></div> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="footer-1">
+                        <!-- <div class="dot-top"></div> -->
+                        <h2 class="content__title" data-splitting data-effect10>Malesuada suspendisse nunc </h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="item-footer">
+                                    <h4>OUR LOCATION</h4>
+                                    <h3>London</h3>
+                                    <p>828 Timbercrest Road,
+                                        Healy City, AK 99743</p>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="item-footer">
+                                    <h4>CONTACT US</h4>
+                                    <a href="mailto: contact@solveamystery.com">
+                                        <h3>contact@solveamystery.com</h3>
+                                    </a>
+                                    <a href="tel: +907 683 8196">
+                                        <h3>+907 683 8196</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-link">
+                            <form action="">
+                                <div class="footer-form">
+                                    <input type="email" name="" id="" placeholder="Enter you email address">
+                                    <button type="submit">subscribe <i class="fal fa-chevron-right"></i></button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <ul class="list-social">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-between">
+                    <div class="footer-2">
+                        <!-- <div class="dot-top"></div> -->
+                        <h2 class="content__title" data-splitting data-effect10>Malesuada suspendisse nunc tempus
+                            facilisis bibendum</h2>
+                        <a href="#" class="btn btn-dark"><span>JOIN NOW</span></a>
+                    </div>
+                    <div class="footer-link-bottom">
+                        <ul>
+                            <li><a href="page.html">Website Privacy Policy</a></li>
+                            <li><a href="page.html">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <div class="row row-footer-bottom">
+                <div class="col-md-7">
+                    <p class="footer-copyright">
+                        Copyright Dotcreativemarket
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <div class="footer-link-bottom">
+                        <ul>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </footer>
+
+
+
+    <!-- Script -->
+
+    <script src="assets/packages/jquery-3.5.1.min.js"></script>
+    <script src="assets/packages/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
+    <script src="assets/packages/select2.min.js"></script>
+    <script src="assets/packages/swiper6.1.1/swiper.min.js"></script>
+    <script src="assets/packages/wow.min.js"></script>
+    <script src="assets/packages/anime.min.js"></script>
+    <script src="assets/packages/gsap/gsap.min.js"></script>
+    <script src="assets/packages/TweenMax.js"></script>
+    <script src="assets/packages/locomotive-scroll.min.js"></script>
+
+    <script src="assets/packages/ScrollMagic.min.js"></script>
+    <script src="assets/packages/debug.addIndicators.min.js"></script>
+    <script src="assets/packages/gsap/animation.gsap.js"></script>
+    <script src="assets/packages/gsap/ScrollTrigger.min.js"></script>
+
+    <script src="assets/packages/lightgallery/js/lightgallery-all.min.js"></script>
+
+    <script src="assets/packages/jquery.meanmenu.min.js"></script>
+    <script src="assets/packages/lenis.min.js"></script>
+    <script src="assets/packages/lazysizes.min.js"></script>
+
+    <!-- <script async>
+        Splitting();
+    </script> -->
+
+    <!-- Page Js -->
+    <script src="assets/js/main.js" async></script>
+</body>
+
+</html>

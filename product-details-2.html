@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solve a Mystery</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Package -->
+    <link rel="stylesheet" href="assets/packages/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/packages/select2.min.css">
+    <link rel="stylesheet" href="assets/packages/swiper6.1.1/swiper.min.css">
+    <link rel="stylesheet" href="assets/packages/animate.min.css">
+    <link rel="stylesheet" href="assets/packages/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/packages/meanmenu.min.css">
+    <link rel="stylesheet" href="assets/packages/locomotive.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+    <!-- Style -->
+
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <script src="assets/packages/splitting.min.js" async></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="logo-header container">
+
+
+
+            <div class="site-header-logo">
+                <a href="index.html">
+                    <img src="assets/images/logo/logo.png" alt="" class="">
+                </a>
+            </div>
+
+            <div class="site-header-menu">
+                <div class="site-header-link">
+                    <ul>
+                        <li>
+                            <a href="index.html">Start</a>
+
+                        </li>
+                        <li class="has-submenu _column-2">
+                            <a href="#">Mystery Hunts</a>
+                            <ul>
+                                <li><a href="product-list.html">Denmark</a></li>
+                                <li><a href="product-list.html">Sweden</a></li>
+                                <li><a href="product-list.html">Norway</a></li>
+                                <li><a href="product-list.html">United Kingdom</a></li>
+                                <li><a href="product-list.html">Ireland</a></li>
+                                <li><a href="product-list.html">Spain</a></li>
+                                <li><a href="product-list.html">The Netherlands</a></li>
+                                <li><a href="product-list.html">France</a></li>
+                                <li><a href="product-list.html">Italy</a></li>
+                                <li><a href="product-list.html">Austria</a></li>
+                                <li><a href="product-list.html">Germany</a></li>
+                                <li><a href="product-list.html">Hungary</a></li>
+                                <li><a href="product-list.html">United States</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="redeem-voucher.html">Redeem Voucher</a></li>
+                        <li><a href="team-event.html">Team Event</a></li>
+                        <li class="has-submenu">
+                            <a href="#">More</a>
+                            <ul>
+                                <li><a href="product-details.html">Gift Card</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+            <div class="logo-header-menu">
+                <ul>
+                    <li class="language-menu">
+                        <a href="#">EN</a>
+                        <ul>
+                            <li><a href="#">GER</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="cart-btn">
+                    <i class="fal fa-shopping-cart"></i>
+                    <span>1</span>
+                </div>
+                <div class="site-header-ham">
+                    <a href="#" class="ham-btn">
+                        <i class="fas fa-bars"></i>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="menu-mobile-container">
+        <button class="mobile__close-btn" id="mobile__close-btn">
+            <span><i class="fal fa-times"></i></span>
+        </button>
+        <div class="logo mb-40">
+            <a href="index.html">
+                <img src="assets/images/logo/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="mobile-menu">
+
+        </div>
+    </div>
+
+    <div class="cart-container">
+        <div class="cart-title">
+            <h3>Cart</h3>
+            <div class="cart-close" title="Close"><i class="fas fa-times"></i></div>
+        </div>
+
+        <div class="cart-list" data-lenis-prevent>
+            <ul>
+                <li>
+                    <div class="cart-item">
+                        <a href="#" class="cart-item-img">
+                            <img class="lazyload" data-src="assets/images/home/section-4/2.jpg" alt="">
+                        </a>
+                        <div class="cart-item-info">
+                            <!-- <div class="cart-item-cate">
+                                <span>Denmark</span>
+                            </div> -->
+                            <a href="#" class="cart-item-title">
+                                København | Drabet ved Amalienborg slot
+                            </a>
+                            <div class="cart-item-variant">
+                                <span>Dansk Version</span>
+                            </div>
+                            <div class="cart-item-price">
+                                <span>$50/ person</span>
+                            </div>
+                        </div>
+                        <div class="cart-remove">
+                            <a href="#">
+                                <i class="fal fa-trash-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="cart-item">
+                        <a href="#" class="cart-item-img">
+                            <img class="lazyload" data-src="assets/images/home/section-4/2.jpg" alt="">
+                        </a>
+                        <div class="cart-item-info">
+                            <!-- <div class="cart-item-cate">
+                                <span>Denmark</span>
+                            </div> -->
+                            <a href="#" class="cart-item-title">
+                                København | Drabet ved Amalienborg slot
+                            </a>
+                            <div class="cart-item-variant">
+                                <span>Dansk Version</span>
+                            </div>
+                            <div class="cart-item-price">
+                                <span>$50/ person</span>
+                            </div>
+                        </div>
+                        <div class="cart-remove">
+                            <a href="#">
+                                <i class="fal fa-trash-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="cart-item">
+                        <a href="#" class="cart-item-img">
+                            <img class="lazyload" data-src="assets/images/home/section-4/2.jpg" alt="">
+                        </a>
+                        <div class="cart-item-info">
+                            <!-- <div class="cart-item-cate">
+                                <span>Denmark</span>
+                            </div> -->
+                            <a href="#" class="cart-item-title">
+                                København | Drabet ved Amalienborg slot
+                            </a>
+                            <div class="cart-item-variant">
+                                <span>Dansk Version</span>
+                            </div>
+                            <div class="cart-item-price">
+                                <span>$50/ person</span>
+                            </div>
+                        </div>
+                        <div class="cart-remove">
+                            <a href="#">
+                                <i class="fal fa-trash-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="cart-item">
+                        <a href="#" class="cart-item-img">
+                            <img class="lazyload" data-src="assets/images/home/section-4/2.jpg" alt="">
+                        </a>
+                        <div class="cart-item-info">
+                            <!-- <div class="cart-item-cate">
+                                <span>Denmark</span>
+                            </div> -->
+                            <a href="#" class="cart-item-title">
+                                København | Drabet ved Amalienborg slot
+                            </a>
+                            <div class="cart-item-variant">
+                                <span>Dansk Version</span>
+                            </div>
+                            <div class="cart-item-price">
+                                <span>$50/ person</span>
+                            </div>
+                        </div>
+                        <div class="cart-remove">
+                            <a href="#">
+                                <i class="fal fa-trash-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="cart-button">
+            <div class="text">
+                <h4>Subtotal:</h4>
+                <span>$1500</span>
+            </div>
+            <div class="btn-group">
+                <button type="submit">Checkout</button>
+                <a href="cart.html" class="btn-site btn-white">View Cart</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="body-overlay"></div>
+
+
+
+    <main id="scrollable">
+
+        <section class="detail-banner">
+            <div class="bg">
+                <img data-scroll data-scroll-speed="-0.5" src="assets/images/detail-banner.webp" alt="">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="detail-content">
+                            <h1>The murder by Christiansborg Palace</h1>
+                            <ul>
+                                <li>
+                                    <b>Playing time:</b> 2 Hours
+                                </li>
+                                <li>
+                                    <b>Speed:</b> 2 km/1 mile
+                                </li>
+                                <li>
+                                    <b>Player:</b> Min. 2 players
+                                </li>
+                                <li>
+                                    <b>Price:</b> €25 / DKK 189 per person
+                                </li>
+                                <li>
+                                    <b>Based on:</b> Case D
+                                </li>
+                                <li>
+                                    <b>Language:</b> DA/EN
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-dark"><span>Add to Cart (DA)</span></a>
+                            <a href="#" class="btn btn-dark"><span>Add to Cart (ENG)</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" data-scroll>
+            <div class="el-bg el-1">
+                <img data-scroll data-scroll-speed="-0.05" src="assets/images/home/section-1/el-1.png" alt="">
+            </div>
+            <div class="el-bg el-2">
+                <img src="assets/images/home/section-1/el-2.png" alt="">
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-xl-8 col-lg-10 align-self-center">
+                        <div class="content text-center">
+                            <h2 class="content__title" data-splitting data-effect20>About The Mystery</h2>
+
+                            <div class="detail-img-slide">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="detail-img-item">
+                                                
+                                                <div class="tape-el">
+                                                    <div class="el-1"></div>
+                                                    <div class="el-2"></div>
+                                                </div>
+                                                <div class="img">
+                                                    <img src="assets/images/p-1.jpeg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="detail-img-item">
+                                                
+                                                <div class="tape-el">
+                                                    <div class="el-1"></div>
+                                                    <div class="el-2"></div>
+                                                </div>
+                                                <div class="img">
+                                                    <img src="assets/images/p-2.jpeg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="detail-img-item">
+                                                
+                                                <div class="tape-el">
+                                                    <div class="el-1"></div>
+                                                    <div class="el-2"></div>
+                                                </div>
+                                                <div class="img">
+                                                    <img src="assets/images/p-3.jpeg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="detail-img-item">
+                                                
+                                                <div class="tape-el">
+                                                    <div class="el-1"></div>
+                                                    <div class="el-2"></div>
+                                                </div>
+                                                <div class="img">
+                                                    <img src="assets/images/p-4.jpeg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="detail-img-item">
+                                                
+                                                <div class="tape-el">
+                                                    <div class="el-1"></div>
+                                                    <div class="el-2"></div>
+                                                </div>
+                                                <div class="img">
+                                                    <img src="assets/images/p-5.jpeg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="detail-img-item">
+                                                
+                                                <div class="tape-el">
+                                                    <div class="el-1"></div>
+                                                    <div class="el-2"></div>
+                                                </div>
+                                                <div class="img">
+                                                    <img src="assets/images/p-6.jpeg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail-img_nav">
+                                    <div class="dif_arrow-wrap">
+                                        <a href="#" class="dif_arrow is-prev w-inline-block">
+                                           <i class="fal fa-long-arrow-left"></i>
+                                        </a>
+                                        <a href="#" class="dif_arrow is-next w-inline-block">
+                                            <i class="fal fa-long-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                    <div class="detail-img_nav-bg">
+                                        <div class="detail-img_nav-fill"></div>
+                                    </div>
+                                    <p class="detail-img_p">SWIPE FOR MORE</p>
+                                </div>
+                            </div>
+
+                            <div class="desc wow animate__fadeIn" data-wow-duration="1.5s">
+                                <p class="content__title" data-splitting data-effect16>
+                                    In ‘The Murder by Christiansborg Castle' you are taken back to the year 1914. You are a criminal investigator in Copenhagen who solves murders and other crimes. Suddenly you receive a strange letter. A very important person has been reported missing and your help is required. 
+                                    <br>
+                                    You are taken to Christiansborg Castle where a horrifying sight greets you: illuminated by torches, you see a severed hand!
+                                    <br>
+                                    Who owns the hand? What happened to the person? Who is the culprit?
+                                    <br>
+                                    This and much more is up to YOU ​​to find out while you, through a self-guided city walk through Copenhagen, solve the many riddles to find the culprit.
+                                    <br>
+                                    The investigation begins at Marmorbroen and ends at Christiansborg Castle Square. The investigation lasts 2 hours, and during that time you will be taken through several historical places in the city of Copenhagen. 
+                                    <br>
+                                    When you have solved the mystery, you can read about the real case behind the mystery.
+                                    <br>
+                                    So bring your best true crime friends out to Copenhagen and solve the mystery of 'The Murder at Christiansborg Castle'.
+                                    <br>
+                                    A good tip! If you are a larger group, you can buy more mysteries and compete against each other. The winner is the group that solves the mystery the fastest.
+                                    <br>
+                                    Good luck. You will need it!
+                                </p>
+                            </div>
+                            <!-- <div class="wow animate__fadeIn text-center d-flex justify-content-center mb-4 mb-md-5" data-wow-duration="1.5s">
+                                <a href="#" class="btn btn-dark"><span>Add to Cart (DA)</span></a>
+                                <a href="#" class="btn btn-dark"><span>Add to Cart (DA)</span></a>
+                            </div> -->
+                            
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-7 col-md-8">
+                        <div class="thumb-img wow animate__fadeIn" data-wow-duration="1.5s">
+                            <img class="lazyload" data-src="assets/images/home/1.jpg" alt="">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="foot-ani">
+                <div class="box-thumb">
+                    <img src="assets/images/foot-ani/1.png" alt="">
+                    <img src="assets/images/foot-ani/2.png" alt="">
+                    <img src="assets/images/foot-ani/3.png" alt="">
+                    <img src="assets/images/foot-ani/4.png" alt="">
+                    <img src="assets/images/foot-ani/5.png" alt="">
+                    <img src="assets/images/foot-ani/6.png" alt="">
+                    <img src="assets/images/foot-ani/7.png" alt="">
+                    <img src="assets/images/foot-ani/8.png" alt="">
+                    <img src="assets/images/foot-ani/9.png" alt="">
+                    <img src="assets/images/foot-ani/10.png" alt="">
+                    <img src="assets/images/foot-ani/11.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="how-to-section">
+            <div class="dot-top"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9 col-xl-8">
+                        <div class="content text-center">
+                            <h2 class="wow animate__fadeIn content__title" data-splitting data-effect5 data-wow-duration="1.5s">
+                                <span class="black">How does it</span> work?
+                            </h2>
+                            <p class="content__title wow animate__fadeIn" data-wow-duration="1.5s" data-splitting data-effect16>
+                                Go to the pick up point, which is a short walk from the starting point, to collect your mystery. Begin the game any time you want at the starting point indicated on the envelope.<br>
+                                The mystery takes place outside and is a private group activity, no third party members or additional players are involved. It is possible to play the game in larger groups, go to FAQ for more information or send an email with your request to: <a href="mailto:contact@solveamystery.net">contact@solveamystery.net</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="content">
+                            <div class="content wow animate__fadeIn" data-wow-duration="1.5s">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container how-to-container">
+                <div class="how-to-line" data-line-3>
+               
+
+                    <svg id="line-111" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1972 1396">
+
+                        <mask id="theMask3">
+                            <path class="line-ani-3" id="maskPath3" 
+                            stroke="#a7c567"
+                            stroke-linecap="square"
+                            linejoin="mitter-clip"
+                            stroke-miterlimit="10"
+                            stroke-width="20px"
+                            d="M-52.31-4.5c35.5,80.9,123.3,123.8,206,154.9a2167.17,2167.17,0,0,0,664.7,136.2c127.1,5.7,254.6.1,381.5,8.7s255.2,32.1,367.5,91.9,207.6,159.6,240.4,282.4-6.8,267.5-110.9,340.6c-83.4,58.6-193.8,65.1-294.2,47.2s-195.4-57.6-293.7-84.7c-226.6-62.4-471.6-56.1-694.6,17.9-211.7,70.2-477.2,238.2-619.4,409.8">
+                        </mask>
+                        <path mask="url(#theMask3)" d="M-52.31-4.5c35.5,80.9,123.3,123.8,206,154.9a2167.17,2167.17,0,0,0,664.7,136.2c127.1,5.7,254.6.1,381.5,8.7s255.2,32.1,367.5,91.9,207.6,159.6,240.4,282.4-6.8,267.5-110.9,340.6c-83.4,58.6-193.8,65.1-294.2,47.2s-195.4-57.6-293.7-84.7c-226.6-62.4-471.6-56.1-694.6,17.9-211.7,70.2-477.2,238.2-619.4,409.8" style="fill: none;stroke: #000;stroke-width: 5px;stroke-dasharray: 24,24"/>
+                       
+                    </svg>
+                      
+                      
+                </div>
+                <div class="row">
+                    <div class="col-md-4 order-0">
+                        <div class="how-to-item">
+                            <div class="shadow">
+                                <div class="shadow-1"></div>
+                                <div class="shadow-2"></div>
+                                <div class="shadow-3"></div>
+                                <div class="shadow-4"></div>
+                            </div>
+                            <div class="how-to-tape">
+                                <div class="tape-number">1</div>
+                                <div class="tape-el"></div>
+                            </div>
+                            <div class="how-to-img">
+                                <img src="assets/images/pick-how/4.jpg" alt="">
+                            </div>
+                            <div class="how-to-content">
+                                <h3>A Crime Has Been Committed Based On Real Events</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 order-1">
+                        <div class="how-to-item">
+                            <div class="shadow">
+                                <div class="shadow-1"></div>
+                                <div class="shadow-2"></div>
+                                <div class="shadow-3"></div>
+                                <div class="shadow-4"></div>
+                            </div>
+                            <div class="how-to-tape">
+                                <div class="tape-number">2</div>
+                                <div class="tape-el"></div>
+                            </div>
+                            <div class="how-to-img">
+                                <img src="assets/images/pick-how/5.jpg" alt="">
+                            </div>
+                            <div class="how-to-content">
+                                <h3>Investigate It!</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 order-2">
+                        <div class="how-to-item">
+                            <div class="shadow">
+                                <div class="shadow-1"></div>
+                                <div class="shadow-2"></div>
+                                <div class="shadow-3"></div>
+                                <div class="shadow-4"></div>
+                            </div>
+                            <div class="how-to-tape">
+                                <div class="tape-number">3</div>
+                                <div class="tape-el"></div>
+                            </div>
+                            <div class="how-to-img">
+                                <img src="assets/images/pick-how/6.jpg" alt="">
+                            </div>
+                            <div class="how-to-content">
+                                <h3>Solve Tasks</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 order-3 order-md-5">
+                        <div class="how-to-item">
+                            <div class="shadow">
+                                <div class="shadow-1"></div>
+                                <div class="shadow-2"></div>
+                                <div class="shadow-3"></div>
+                                <div class="shadow-4"></div>
+                            </div>
+                            <div class="how-to-tape">
+                                <div class="tape-number">4</div>
+                                <div class="tape-el"></div>
+                            </div>
+                            <div class="how-to-img">
+                                <img src="assets/images/pick-how/7.jpg" alt="">
+                            </div>
+                            <div class="how-to-content">
+                                <h3>Enjoy The City While Investigating Suspects</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 order-4">
+                        <div class="how-to-item">
+                            <div class="shadow">
+                                <div class="shadow-1"></div>
+                                <div class="shadow-2"></div>
+                                <div class="shadow-3"></div>
+                                <div class="shadow-4"></div>
+                            </div>
+                            <div class="how-to-tape">
+                                <div class="tape-number">5</div>
+                                <div class="tape-el"></div>
+                            </div>
+                            <div class="how-to-img">
+                                <img src="assets/images/pick-how/8.jpg" alt="">
+                            </div>
+                            <div class="how-to-content">
+                                <h3>Accuse The Guilty</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 order-5 order-md-3">
+                        <div class="how-to-item">
+                            <div class="shadow">
+                                <div class="shadow-1"></div>
+                                <div class="shadow-2"></div>
+                                <div class="shadow-3"></div>
+                                <div class="shadow-4"></div>
+                            </div>
+                            <div class="how-to-tape">
+                                <div class="tape-number">6</div>
+                                <div class="tape-el"></div>
+                            </div>
+                            <div class="how-to-img">
+                                <img src="assets/images/pick-how/9.jpg" alt="">
+                            </div>
+                            <div class="how-to-content">
+                                <h3>Find Out What Happenned In The Real Case</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="about-dark-section">
+            <div class="bg">
+                <img src="assets/images/dt-1.webp" alt="">
+            </div>
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-md-6">
+                        <div class="content">
+                            <h2 class="wow animate__fadeIn content__title" data-splitting data-effect5 data-wow-duration="1.5s">
+                                <span class="white">The Mystery</span> Walk
+                            </h2>
+
+                            <p class="content__title wow animate__fadeIn" data-wow-duration="1.5s" data-splitting data-effect16>
+                                Channel your inner Sherlock Holmes by solving "The Murder at Christiansborg Palace".​
+                                <br><br>
+                                The riddles you have to solve and the clues you have to find are all connected to the surroundings of Christiansborg Palace. You explore the place as the game unfolds!
+                                <br><br>
+                                Solving the murder mystery is an exciting and challenging activity that you can try together with your family, friends, or colleagues.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+
+        <section class="pick-up-section">
+            <div class="dot-top"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 col-md-9">
+                        <div class="content text-center">
+                            <h2 class="wow animate__fadeIn content__title" data-splitting data-effect5 data-wow-duration="1.5s">
+                                <span class="black">Pick Up</span> Point
+                            </h2>
+
+                            <p class="content__title wow animate__fadeIn" data-wow-duration="1.5s" data-splitting data-effect16>The exact location will be sent via email after purchase</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-xl-7">
+                        <div class="content-map img-fade">
+                            <div class="map-item">
+                                <div class="shadow">
+                                    <div class="shadow-1"></div>
+                                    <div class="shadow-2"></div>
+                                    <div class="shadow-3"></div>
+                                    <!-- <div class="shadow-4"></div> -->
+                                </div>
+                                <div class="map-tape">
+                                    <div class="tape-number"></div>
+                                    <div class="tape-el"></div>
+                                </div>
+                                <div class="map-img">
+                                    <img src="assets/images/map.webp" alt="">
+                                </div>
+                                <div class="map-content">
+                                    <p>**You have to collect your mystery at the pick up point within 3 months after purchase, after which you can solve your mystery any time you want.**</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10 mb-4">
+                        <div class="content text-center">
+                            <h2 class="wow animate__fadeIn content__title" data-splitting data-effect5 data-wow-duration="1.5s">
+                                <span class="black">Open</span> Hours:
+                            </h2>
+    
+                            <p class="content__title wow animate__fadeIn" data-wow-duration="1.5s" data-splitting data-effect16>
+                                Mon – Sun: 6am – 6pm<br>
+                                Closed on public holidays
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container pick-up-container">
+                
+                <div class="pick-up-line line-pick-1" data-line-1>
+                    <svg id="line-1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2112.63 215.98">
+                        <mask id="theMask1">
+                            <path class="line-ani" id="maskPath1" 
+                            stroke="#a7c567"
+                            stroke-linecap="square"
+                            linejoin="mitter-clip"
+                            stroke-miterlimit="10"
+                            stroke-width="20px"
+                            d="M-65,2.93C46.45,87.17,321.84,250.89,749.85,96c535-193.59,1085.2-22.42,1294.88,118.83">
+                        </mask>
+
+                        
+                        <path mask="url(#theMask1)" d="M-65,2.93C46.45,87.17,321.84,250.89,749.85,96c535-193.59,1085.2-22.42,1294.88,118.83" style="fill: none;stroke: #000;stroke-width: 5px;stroke-dasharray: 24,24"/>
+                    </svg>
+                      
+                      
+                      
+                </div>
+                <div class="pick-up-line line-pick-2" data-line-2>
+                    <svg id="line-2" data-name="f2415653-8b41-4b6a-b037-062c35f417e4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 211.9 1946.35">
+                        <mask id="theMask2">
+                            <path class="line-ani-2" id="maskPath2" 
+                            stroke="#a7c567"
+                            stroke-linecap="square"
+                            linejoin="mitter-clip"
+                            stroke-miterlimit="10"
+                            stroke-width="20px"
+                            d="M211.9-86.78c-84.24,111.45-248,386.84-93.07,814.85C312.42,1263.07,141.25,1813.27,0,2023">
+                        </mask>
+                        <path mask="url(#theMask2)" d="M211.9-86.78c-84.24,111.45-248,386.84-93.07,814.85C312.42,1263.07,141.25,1813.27,0,2023" style="fill: none;stroke: #000;stroke-width: 5px;stroke-dasharray: 24,24"/>
+                        
+                    </svg>
+                      
+                      
+                      
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="pick-up-item">
+                            <div class="shadow">
+                                <div class="shadow-1"></div>
+                                <div class="shadow-2"></div>
+                                <div class="shadow-3"></div>
+                                <div class="shadow-4"></div>
+                            </div>
+                            <div class="pick-up-tape">
+                                <div class="tape-number">1</div>
+                                <div class="tape-el"></div>
+                            </div>
+                            <div class="pick-up-img">
+                                <img src="assets/images/pick-how/1.jpg" alt="">
+                            </div>
+                            <div class="pick-up-content">
+                                <h3>Buy Now</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="pick-up-item">
+                            <div class="shadow">
+                                <div class="shadow-1"></div>
+                                <div class="shadow-2"></div>
+                                <div class="shadow-3"></div>
+                                <div class="shadow-4"></div>
+                            </div>
+                            <div class="pick-up-tape">
+                                <div class="tape-number">2</div>
+                                <div class="tape-el"></div>
+                            </div>
+                            <div class="pick-up-img">
+                                <img src="assets/images/pick-how/2.jpg" alt="">
+                            </div>
+                            <div class="pick-up-content">
+                                <h3>Pick It Up</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="pick-up-item">
+                            <div class="shadow">
+                                <div class="shadow-1"></div>
+                                <div class="shadow-2"></div>
+                                <div class="shadow-3"></div>
+                                <div class="shadow-4"></div>
+                            </div>
+                            <div class="pick-up-tape">
+                                <div class="tape-number">3</div>
+                                <div class="tape-el"></div>
+                            </div>
+                            <div class="pick-up-img">
+                                <img src="assets/images/pick-how/3.jpg" alt="">
+                            </div>
+                            <div class="pick-up-content">
+                                <h3>Start</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="review-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-6">
+                        <div class="content text-center">
+                            <h2 class="white wow animate__fadeIn content__title " data-splitting data-effect5
+                                data-wow-duration="1.5s">
+                                Customer review feature
+                            </h2>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="review-slide">
+                            <div class="swiper swiper-review">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="review-item">
+                                           
+                                            <div class="review-img">
+                                                    
+                                                <div class="tape-el">
+                                                    <div class="el-1"></div>
+                                                    <div class="el-2"></div>
+                                                </div>
+                                                <div class="img">
+                                                    <img src="assets/images/p-1.jpeg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="review-title">
+                                                <div class="review-name">
+                                                    <h3>Sara Schwab</h3>
+                                                </div>
+                                                <div class="review-rate">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-alt"></i>
+                                                </div>
+                                            </div>
+                                            <div class="review-content">
+                                                <p class="review-quote">
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid repellat provident, excepturi placeat illum fuga quo ducimus, perspiciatis minima error quae quod asperiores. Laboriosam vero impedit quae dolores sint officia.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="review-item">
+                                            <div class="review-img">
+                                                    
+                                                <div class="tape-el">
+                                                    <div class="el-1"></div>
+                                                    <div class="el-2"></div>
+                                                </div>
+                                                <div class="img">
+                                                    <img src="assets/images/p-1.jpeg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="review-title">
+                                                <div class="review-name">
+                                                    <h3>Sara Schwab</h3>
+                                                </div>
+                                                <div class="review-rate">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-alt"></i>
+                                                </div>
+                                            </div>
+                                            <div class="review-content">
+                                                <p class="review-quote">
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid repellat provident, excepturi placeat illum fuga quo ducimus, perspiciatis minima error quae quod asperiores. Laboriosam vero impedit quae dolores sint officia.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="review-item">
+                                            
+                                            <div class="review-img">
+                                                    
+                                                <div class="tape-el">
+                                                    <div class="el-1"></div>
+                                                    <div class="el-2"></div>
+                                                </div>
+                                                <div class="img">
+                                                    <img src="assets/images/p-1.jpeg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="review-title">
+                                                <div class="review-name">
+                                                    <h3>Sara Schwab</h3>
+                                                </div>
+                                                <div class="review-rate">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-alt"></i>
+                                                </div>
+                                            </div>
+                                            <div class="review-content">
+                                                <p class="review-quote">
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid repellat provident, excepturi placeat illum fuga quo ducimus, perspiciatis minima error quae quod asperiores. Laboriosam vero impedit quae dolores sint officia.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="review-item">
+                                            
+                                            <div class="review-img">
+                                                    
+                                                <div class="tape-el">
+                                                    <div class="el-1"></div>
+                                                    <div class="el-2"></div>
+                                                </div>
+                                                <div class="img">
+                                                    <img src="assets/images/p-1.jpeg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="review-title">
+                                                <div class="review-name">
+                                                    <h3>Sara Schwab</h3>
+                                                </div>
+                                                <div class="review-rate">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-alt"></i>
+                                                </div>
+                                            </div>
+                                            <div class="review-content">
+                                                <p class="review-quote">
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid repellat provident, excepturi placeat illum fuga quo ducimus, perspiciatis minima error quae quod asperiores. Laboriosam vero impedit quae dolores sint officia.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+    
+                         
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-2-section">
+            <div class="el-bg el-b-1">
+                <img data-scroll data-scroll-speed="-0.02" src="assets/images/home/section-2/b-1.png" alt="">
+            </div>
+            <div class="el-bg el-b-2">
+                <img data-scroll data-scroll-speed="-0.02" src="assets/images/home/section-2/b-2.png" alt="">
+            </div>
+            <div class="el-bg el-1">
+                <img data-scroll data-scroll-speed="0.05" src="assets/images/home/section-2/el-1.png" alt="">
+            </div>
+            <div class="el-bg el-2">
+                <img data-scroll data-scroll-speed="0.05" src="assets/images/home/section-2/el-2.png" alt="">
+            </div>
+            <div class="el-bg el-4">
+                <img data-scroll data-scroll-speed="0.05" src="assets/images/home/section-2/el-4.png" alt="">
+            </div>
+            <div class="el-bg el-5">
+                <img data-scroll data-scroll-speed="0.05" src="assets/images/home/section-2/sam.png" alt="">
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-6">
+                        <div class="content text-center">
+                            <h2 class="wow animate__fadeIn content__title" data-splitting data-effect5
+                                data-wow-duration="1.5s">
+                                Related products
+                            </h2>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="content-page product-page">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="swiper swiper-related">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="news-item wow animate__fadeIn" data-wow-duration="1.5s">
+                                            <div class="thumb-img">
+                                                <a href="#">
+                                                    <img class="lazyload" data-src="assets/images/home/section-3/1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="news-content">
+                                                <div class="p-content d-flex justify-content-between">
+                                                    <h5 class="content__title" data-splitting data-effect10><a class="color-w" href="#">The murder by christiansborg Palace</a></h5>
+                                                    <a class="price ps-5 text-end" href="#">$50<br><span>/person</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="news-item wow animate__fadeIn" data-wow-duration="1.5s">
+                                            <div class="thumb-img">
+                                                <a href="#">
+                                                    <img class="lazyload" data-src="assets/images/home/section-3/1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="news-content">
+                                                <div class="p-content d-flex justify-content-between">
+                                                    <h5 class="content__title" data-splitting data-effect10><a class="color-w" href="#">The murder by christiansborg Palace</a></h5>
+                                                    <a class="price ps-5 text-end" href="#">$50<br><span>/person</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="news-item wow animate__fadeIn" data-wow-duration="1.5s">
+                                            <div class="thumb-img">
+                                                <a href="#">
+                                                    <img class="lazyload" data-src="assets/images/home/section-3/1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="news-content">
+                                                <div class="p-content d-flex justify-content-between">
+                                                    <h5 class="content__title" data-splitting data-effect10><a class="color-w" href="#">The murder by christiansborg Palace</a></h5>
+                                                    <a class="price ps-5 text-end" href="#">$50<br><span>/person</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="news-item wow animate__fadeIn" data-wow-duration="1.5s">
+                                            <div class="thumb-img">
+                                                <a href="#">
+                                                    <img class="lazyload" data-src="assets/images/home/section-3/1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="news-content">
+                                                <div class="p-content d-flex justify-content-between">
+                                                    <h5 class="content__title" data-splitting data-effect10><a class="color-w" href="#">The murder by christiansborg Palace</a></h5>
+                                                    <a class="price ps-5 text-end" href="#">$50<br><span>/person</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="news-item wow animate__fadeIn" data-wow-duration="1.5s">
+                                            <div class="thumb-img">
+                                                <a href="#">
+                                                    <img class="lazyload" data-src="assets/images/home/section-3/1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="news-content">
+                                                <div class="p-content d-flex justify-content-between">
+                                                    <h5 class="content__title" data-splitting data-effect10><a class="color-w" href="#">The murder by christiansborg Palace</a></h5>
+                                                    <a class="price ps-5 text-end" href="#">$50<br><span>/person</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="menu-cart-bottom">
+            <div class="menu-cart-title">
+                <h2><span>Buy tickets for</span> The murder by Christiansborg Palace</h2>
+            </div>
+            <div class="menu-cart-action">
+                <div class="cart-left">
+                    <div class="cart-t">
+                        <h2>Players</h2>
+                            
+                    </div>
+                    <div class="menu-cart-quantity">
+                        
+                        <a href="#" class="quantity-btn">
+                            <i class="fad fa-minus"></i>
+                        </a>
+                        <input type="number" min="2" name="" step="1" id="" value="2">
+                        <a href="#" class="quantity-btn">
+                            <i class="fad fa-plus"></i>
+                        </a>
+                    </div>
+                    <div class="cart-total">
+                        <p>Total cost: $60</p>
+                    </div>
+                </div>
+                <div class="menu-cart-submit">
+                    <button class="btn btn-dark">
+                        <span>Add to cart (DA)</span>
+                    </button>
+                    <button class="btn btn-dark">
+                        <span>Add to cart (ENG)</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <span class="awd-scrollbar"></span>
+
+    <footer class="site-footer">
+        <!-- <div class="dot-top-1"></div>
+        <div class="dot-top-2"></div> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="footer-1">
+                        <!-- <div class="dot-top"></div> -->
+                        <h2 class="content__title" data-splitting data-effect10>Malesuada suspendisse nunc </h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="item-footer">
+                                    <h4>OUR LOCATION</h4>
+                                    <h3>London</h3>
+                                    <p>828 Timbercrest Road,
+                                        Healy City, AK 99743</p>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="item-footer">
+                                    <h4>CONTACT US</h4>
+                                    <a href="mailto: contact@solveamystery.com">
+                                        <h3>contact@solveamystery.com</h3>
+                                    </a>
+                                    <a href="tel: +907 683 8196">
+                                        <h3>+907 683 8196</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-link">
+                            <form action="">
+                                <div class="footer-form">
+                                    <input type="email" name="" id="" placeholder="Enter you email address">
+                                    <button type="submit">subscribe <i class="fal fa-chevron-right"></i></button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <ul class="list-social">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-between">
+                    <div class="footer-2">
+                        <!-- <div class="dot-top"></div> -->
+                        <h2 class="content__title" data-splitting data-effect10>Malesuada suspendisse nunc tempus
+                            facilisis bibendum</h2>
+                        <a href="#" class="btn btn-dark"><span>JOIN NOW</span></a>
+                    </div>
+                    <div class="footer-link-bottom">
+                        <ul>
+                            <li><a href="page.html">Website Privacy Policy</a></li>
+                            <li><a href="page.html">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <div class="row row-footer-bottom">
+                <div class="col-md-7">
+                    <p class="footer-copyright">
+                        Copyright Dotcreativemarket
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <div class="footer-link-bottom">
+                        <ul>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </footer>
+
+
+
+    <!-- Script -->
+
+    <script src="assets/packages/jquery-3.5.1.min.js"></script>
+    <script src="assets/packages/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
+    <script src="assets/packages/select2.min.js"></script>
+    <script src="assets/packages/swiper6.1.1/swiper.min.js"></script>
+    <script src="assets/packages/wow.min.js"></script>
+    <script src="assets/packages/anime.min.js"></script>
+    <script src="assets/packages/gsap/gsap.min.js"></script>
+    <script src="assets/packages/TweenMax.js"></script>
+    <script src="assets/packages/locomotive-scroll.min.js"></script>
+
+    <script src="assets/packages/ScrollMagic.min.js"></script>
+    <script src="assets/packages/debug.addIndicators.min.js"></script>
+    <script src="assets/packages/gsap/animation.gsap.js"></script>
+    <script src="assets/packages/gsap/ScrollTrigger.min.js"></script>
+
+    <script src="assets/packages/lightgallery/js/lightgallery-all.min.js"></script>
+
+    <script src="assets/packages/jquery.meanmenu.min.js"></script>
+    <script src="assets/packages/lenis.min.js"></script>
+    <script src="assets/packages/lazysizes.min.js"></script>
+
+    <!-- <script async>
+        Splitting();
+    </script> -->
+
+    <!-- Page Js -->
+    <script src="assets/js/main.js" async></script>
+</body>
+
+</html>

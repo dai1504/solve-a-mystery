@@ -1,0 +1,111 @@
+.content
+    &.text-center
+        h2
+            margin-left: auto
+            margin-right: auto
+    h2
+        color: $color-title
+        font-weight: bold
+        font-family: $font-title
+        margin-bottom: size-pc(50,rem)
+        font-size: size-pc(52,rem)
+        position: relative
+        // width: fit-content
+        // letter-spacing: size-pc(4,rem)
+        @media screen and ( max-width: 767.82px )
+            font-size: size-pc(45,rem)
+        @media screen and ( max-width: 575.82px )
+            font-size: size-pc(40,rem)
+        span
+            color: inherit
+        .black 
+            color: $color-text
+            span 
+                color: $color-text
+        &::before
+            position: absolute
+            content: attr(data-bg)
+            font-family: $font-before
+            font-weight: 100
+            color: #DCDCDC
+            opacity: 0.6
+            font-size: size-pc(140,rem)
+            z-index: -1
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            white-space: nowrap
+            @media screen and ( max-width: 767.82px )
+                font-size: size-pc(130,rem)
+            @media screen and ( max-width: 575.82px )
+                font-size: size-pc(100,rem)
+        // span
+        //     color: $color-title-span
+        &.title-big
+            font-size: size-pc(84,rem)
+            @media screen and ( max-width: 767.82px )
+                font-size: size-pc(64,rem)
+    .desc
+        margin-bottom: size-pc(50,rem)
+    p
+        font-size: size-pc(30,rem)
+        @media screen and ( max-width: 767.82px )
+            // font-size: size-pc(26,rem)
+    h3
+        font-size: size-pc(22,rem)
+        font-family: $font-body
+        font-weight: 600
+        color: $color-2
+        letter-spacing: size-pc(6,rem)
+        margin-bottom: size-pc(25,rem)
+    .quote
+        padding-left: 30px
+        position: relative
+        &::before
+            position: absolute
+            width: 3px
+            height: 90%
+            top: 50%
+            left: 0
+            transform: translateY(-50%)
+            content: ''
+            background-color: $color-title-span
+    .list-contact
+        margin-bottom: size-pc(30,rem)
+        li
+            margin: 10px 0
+            font-weight: $font-regular
+            a
+                &:hover
+                    color: $color-primary
+        i
+            color: $color-primary
+            width: 30px
+            text-align: center
+.color-w
+    color: #fff !important
+.max-width-100
+    max-width: 100% !important
+input
+    border: 1px solid #fff
+    background: none
+    outline: 0
+    box-shadow: none
+    color: #fff
+    padding: 5px
+.form-control
+    background: none
+    border-radius: 0
+    border: 0
+    border-bottom: 1px solid #fff
+    color: #fff
+    &:focus
+        color: #fff
+        background: none
+        border-color: #fff
+        outline: 0
+        box-shadow: none
+    &::placeholder
+        color: #fff
+        opacity: 0.9
+        font-style: italic
